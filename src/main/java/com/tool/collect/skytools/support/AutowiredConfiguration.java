@@ -14,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.util.CollectionUtils;
 
@@ -28,7 +27,7 @@ import java.util.Set;
  * @author Gnoll
  * @create 2017-07-03 10:25
  **/
-@Configuration
+//@Configuration
 public class AutowiredConfiguration {
     private static final Log LOG = LoggerFactory.make();
     @Autowired

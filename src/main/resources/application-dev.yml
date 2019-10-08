@@ -66,50 +66,6 @@ appserver:
         url-map:
           key: aamactivemachine
           webApiKey: AIE_WEB
-          userLogin: /user_login
-          modifyUserAvator: /modify_user_avator
-          modifyUserInfo: /modify_user_info
-          getUserAudio: /get_record_list
-          getUserAudioPage: /get_record_list_page
-          getUserAudioByTime: /get_record_list_time
-          getAudioDetail: /get_record
-          deleteRecord: /delete_record
-          operateSong: /operate_song
-          getPlaySongs: /get_playsong_list
-          searchSongs: /search_song
-          searchSinger: /search_singer
-          getSingerByRegion: /search_singer_by_country
-          operateCollectionSong: /operate_collect_song
-          getCollectionSong: /get_collect_song
-          operateCollectionSinger: /operate_collect_singer
-          getCollectionSinger: /get_collect_singer
-          getSingerSong: /get_singer_song
-          getHotSong: /get_hot_song
-          getNewSong: /get_new_song
-          getHotSinger: /get_hot_singer
-          getFrequentSong: /get_frequent_song
-          getMachinePackage: /get_machine_package
-          getCoupon: /get_coupon
-          getPrePay: /get_prepay_id
-          cbPrePay: /cb_get_prepay_id
-          getLoginDetail: /get_login_detail
-          getMachineByLocation: /get_machine_by_location
-          userLogout: /user_logout
-          getUserStatus: /get_user_status
-          getPackageDetail: /get_package_detail
-          getLoginRelevance: /get_login_relevance
-          createUser: /create_user
-          getMachineInfo: /get_machine_info
-          getMachines: /get_machines
-          getStores: /get_stores
-          getMachineUse: /get_machine_use
-          getExpreCouponUidlist: /get_expre_coupon_uidlist
-          getRecordListByMsisdn: /get_record_list_by_msisdn
-          combineRecord: /combine_record
-          getRecordById: /get_record_by_id
-          deleteRecordById: /delete_record_by_id
-          getStoreLoginUser: /get_store_login_user
-          getCollectStatus: /get_collect_status
           getSongByNumber: /get_song_by_number
 
       qq:
