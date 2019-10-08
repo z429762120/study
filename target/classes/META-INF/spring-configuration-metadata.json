@@ -1,0 +1,119 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.tool.collect.skytools.support.async.AsyncAutoProperties",
+      "name": "appserver.async",
+      "type": "com.tool.collect.skytools.support.async.AsyncAutoProperties"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.http.config.HttpManagerProperties",
+      "name": "appserver.http",
+      "type": "com.tool.collect.skytools.support.http.config.HttpManagerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.tool.collect.skytools.support.async.AsyncAutoProperties",
+      "defaultValue": false,
+      "name": "appserver.async.enabled",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.async.AsyncAutoProperties",
+      "defaultValue": false,
+      "name": "appserver.async.enabled",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.async.AsyncAutoProperties",
+      "name": "appserver.async.executors",
+      "type": "java.util.List<com.tool.collect.skytools.support.async.ExecutorProperties>"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.async.AsyncAutoProperties",
+      "name": "appserver.async.executors",
+      "type": "java.util.List<com.tool.collect.skytools.support.async.ExecutorProperties>"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.http.config.HttpManagerProperties",
+      "name": "appserver.http.client-properties",
+      "type": "java.util.Map<java.lang.String,com.tool.collect.skytools.support.http.config.HttpClientProperties>"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.http.config.HttpManagerProperties",
+      "name": "appserver.http.client-properties",
+      "type": "java.util.Map<java.lang.String,com.tool.collect.skytools.support.http.config.HttpClientProperties>"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.http.config.HttpManagerProperties",
+      "defaultValue": 0,
+      "name": "appserver.http.max-total",
+      "description": "最大连接数",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.http.config.HttpManagerProperties",
+      "defaultValue": 0,
+      "name": "appserver.http.max-total",
+      "description": "最大连接数",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.http.config.HttpManagerProperties",
+      "defaultValue": 0,
+      "name": "appserver.http.retry-number",
+      "description": "重试次数",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.http.config.HttpManagerProperties",
+      "defaultValue": 0,
+      "name": "appserver.http.retry-number",
+      "description": "重试次数",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.http.config.HttpManagerProperties",
+      "defaultValue": 0,
+      "name": "appserver.http.time-out-connection",
+      "description": "建立连接超时",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.http.config.HttpManagerProperties",
+      "defaultValue": 0,
+      "name": "appserver.http.time-out-connection",
+      "description": "建立连接超时",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.http.config.HttpManagerProperties",
+      "defaultValue": 0,
+      "name": "appserver.http.time-out-request-connection",
+      "description": "获取连接超时",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.http.config.HttpManagerProperties",
+      "defaultValue": 0,
+      "name": "appserver.http.time-out-request-connection",
+      "description": "获取连接超时",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.http.config.HttpManagerProperties",
+      "defaultValue": 0,
+      "name": "appserver.http.time-out-socket",
+      "description": "响应超时",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.support.http.config.HttpManagerProperties",
+      "defaultValue": 0,
+      "name": "appserver.http.time-out-socket",
+      "description": "响应超时",
+      "type": "java.lang.Integer"
+    }
+  ]
+}
