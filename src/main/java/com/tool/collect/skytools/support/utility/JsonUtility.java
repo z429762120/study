@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.Version;
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.fasterxml.jackson.databind.ser.PropertyFilter;
@@ -40,21 +39,28 @@ public class JsonUtility {
     public final TypeFactory TYPE_FACTORY = TypeFactory.defaultInstance();
     public final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
     public final UnifyFilterProvider DEFAULT_FILTER_PROVIDER = new UnifyFilterProvider();
-    public final String[] DEFAULT_EXCLUDE_PROPERTIES = {"createTime", "dataState", "class"};
+    public final String[] DEFAULT_EXCLUDE_PROPERTIES = {};
 
     static{
-        SimpleModule module = new SimpleModule("JsonUtility",new Version(1,0,0,"SNAPSHOT","com.aimymusic.appserver","AppServer-commons"));
-
+        /**自定义序列化方式，继承JsonSerializer类*/
+        SimpleModule module = new SimpleModule();
         module.addSerializer(float.class, new FloatSerializer());
         module.addSerializer(Float.class, new FloatSerializer());
         module.addSerializer(double.class, new DoubleSerializer());
         module.addSerializer(Double.class, new DoubleSerializer());
+        OBJECT_MAPPER.registerModule(module);
 
-        OBJECT_MAPPER.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);// 过滤不需要的字段
+        OBJECT_MAPPER.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES,false);// 过滤不需要的字段
         OBJECT_MAPPER.configure(SerializationFeature.WRITE_ENUMS_USING_INDEX, true);     // 枚举值ordinal()输出
         OBJECT_MAPPER.configure(JsonParser.Feature.ALLOW_UNQUOTED_CONTROL_CHARS, true);  // 允许JSON字符串包含非引号控制字符（值小于32的ASCII字符，包含制表符和换行符）
-        OBJECT_MAPPER.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
-        OBJECT_MAPPER.setAnnotationIntrospector(new UnifyAnnotationIntrospector());
+        OBJECT_MAPPER.configure(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, true);  // 允许没有引号的字段名（非标准）
+        OBJECT_MAPPER.configure(JsonParser.Feature.ALLOW_SINGLE_QUOTES, true);//允许单引号
+        //OBJECT_MAPPER.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES,true);//大小写脱敏 默认为false  需要改为tru
+
+        OBJECT_MAPPER.enable(SerializationFeature.INDENT_OUTPUT);//美化输出
+
+        OBJECT_MAPPER.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);//过滤非空字段
+        OBJECT_MAPPER.setAnnotationIntrospector(new UnifyAnnotationIntrospector());//继承至JacksonAnnotationIntrospector，用于自定义序列化key生成规则
         DEFAULT_FILTER_PROVIDER.setDefaultFilter(SimpleBeanPropertyFilter.serializeAllExcept(DEFAULT_EXCLUDE_PROPERTIES));
     }
 
@@ -63,19 +69,17 @@ public class JsonUtility {
             return JsonUtility.OBJECT_MAPPER.readTree(json);
         } catch (IOException e) {
             log.warnf(e,"Convert [{}] to jsonNode failed", json);
-            //throw EXPF.exception(ErrorCode.JsonDeserializer,true);
             throw e;
         }
     }
 
 
-    public String toString(Object object) throws Exception {
+    public String toString(Object object) {
         try {
             return OBJECT_MAPPER.writer(DEFAULT_FILTER_PROVIDER).writeValueAsString(object);
         } catch (JsonProcessingException e) {
             log.warnf(e,"Convert [{} {}] to string failed",object != null ? object.getClass() : "null", object);
-            //throw EXPF.exception(ErrorCode.JsonSerializer,true);
-            throw e;
+            throw new RuntimeException(e);
         }
     }
 
@@ -85,19 +89,17 @@ public class JsonUtility {
             return OBJECT_MAPPER.writer(provider).writeValueAsString(object);
         } catch (JsonProcessingException e) {
             log.warnf(e,"Convert [{} {}] to string failed",object != null ? object.getClass() : "null", object);
-            //throw EXPF.exception(ErrorCode.JsonSerializer,true);
             throw e;
         }
     }
 
-    public <T> T toObject(String json,Class<T> objectClass) throws Exception {
+    public <T> T toObject(String json,Class<T> objectClass) {
         JavaType javaType = TYPE_FACTORY.constructType(objectClass);
         try {
             return OBJECT_MAPPER.readValue(json,javaType);
         } catch (IOException e) {
             log.warnf(e,"Convert [{}] to object [{}] failed", json, objectClass);
-            //throw EXPF.exception(ErrorCode.JsonDeserializer,true);
-            throw e;
+            throw new RuntimeException(e);
         }
     }
 
@@ -107,7 +109,6 @@ public class JsonUtility {
             return OBJECT_MAPPER.readValue(json,arrayType);
         } catch (IOException e) {
             log.warnf(e,"Convert [{}] to object [{}] failed", json, objectClass);
-            //throw EXPF.exception(ErrorCode.JsonDeserializer,true);
             throw e;
         }
     }
@@ -118,7 +119,6 @@ public class JsonUtility {
             return OBJECT_MAPPER.readValue(json,collectionLikeType);
         } catch (IOException e) {
             log.warnf(e,"Convert [{}] to collection [{}<{}>] failed", json, collectionClass, elementClass);
-            //throw EXPF.exception(ErrorCode.JsonDeserializer,true);
             throw e;
         }
     }
@@ -131,27 +131,25 @@ public class JsonUtility {
         return toCollection(json, HashSet.class, elementClass);
     }
 
-    public <K,V,M extends Map<K,V>> M toMap(String json,Class<M> mapClass,Class<K> keyClass,Class<V> valueClass) throws Exception {
+    public <K,V,M extends Map<K,V>> M toMap(String json,Class<M> mapClass,Class<K> keyClass,Class<V> valueClass) {
         MapType mapType = TYPE_FACTORY.constructMapType(mapClass, keyClass, valueClass);
         try {
             return OBJECT_MAPPER.readValue(json,mapType);
         } catch (IOException e) {
             log.warnf(e,"Convert [{}] to map [{}<{}, {}>] failed", json, mapClass, keyClass, valueClass);
-            //FIXME 重构
-            //throw EXPF.exception(ErrorCode.JsonDeserializer,true);
-            throw e;
+            throw new RuntimeException(e);
         }
     }
 
-    public <K, V> HashMap<K, V> toMap(String json, Class<K> keyClass, Class<V> valueClass) throws Exception {
+    public <K, V> HashMap<K, V> toMap(String json, Class<K> keyClass, Class<V> valueClass) {
         return toMap(json, HashMap.class, keyClass, valueClass);
     }
 
-    public <K, V> HashMap<K, V> toMap(String json, Class<V> valueClass) throws Exception {
+    public <K, V> HashMap<K, V> toMap(String json, Class<V> valueClass) {
         return toMap(json, HashMap.class, String.class, valueClass);
     }
 
-    public <K, V> HashMap<K, V> toMap(String json) throws Exception {
+    public <K, V> HashMap<K, V> toMap(String json) {
         return toMap(json, HashMap.class, String.class, Object.class);
     }
 
