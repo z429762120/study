@@ -83,13 +83,13 @@ public class JsonUtility {
         }
     }
 
-    public String toString(Object object, PropertyFilterInfo... filters) throws Exception {
+    public String toString(Object object, PropertyFilterInfo... filters) {
         UnifyFilterProvider provider = createProvider(filters);
         try {
             return OBJECT_MAPPER.writer(provider).writeValueAsString(object);
         } catch (JsonProcessingException e) {
             log.warnf(e,"Convert [{} {}] to string failed",object != null ? object.getClass() : "null", object);
-            throw e;
+            throw new RuntimeException(e);
         }
     }
 

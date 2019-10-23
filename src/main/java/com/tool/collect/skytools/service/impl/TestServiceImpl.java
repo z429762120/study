@@ -1,17 +1,15 @@
 package com.tool.collect.skytools.service.impl;
 
-import com.alibaba.fastjson.JSON;
 import com.tool.collect.skytools.dto.JsonTestDTO;
 import com.tool.collect.skytools.dto.Person;
 import com.tool.collect.skytools.mapper1.DemoMapper1;
 import com.tool.collect.skytools.mapper2.DemoMapper2;
 import com.tool.collect.skytools.service.TestService;
+import com.tool.collect.skytools.support.model.PropertyFilterInfo;
 import com.tool.collect.skytools.support.utility.JsonUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.math.BigDecimal;
 
 /**
  * @Descriiption
@@ -37,19 +35,14 @@ public class TestServiceImpl implements TestService {
     }
 
     public static void main(String[] args) {
-        JsonTestDTO j = new JsonTestDTO();
-        j.set_name("11");
-        j.setAddress("ddidid");
-        j.setNum(1.2d);
+        Person p = new Person();
+        p.setAge(11);
+        p.setUsername("sss");
+        PropertyFilterInfo filterInfo = new PropertyFilterInfo("age");
 
-        String jsonstr2 = "{\n" +
-                "  \"Address\" : \"ddidid\",\n" +
-                "  \"nUm\" : 1.2,\n" +
-                "  \"bb\" : 1.20999999999999996447286321199499070644378662109375,\n" +
-                "  \"_name\" : \"11\"\n" +
-                "}";
-        System.out.println(JsonUtility.toObject(jsonstr2,JsonTestDTO.class));
-        System.out.println(JsonUtility.toString(j));
+        System.out.println(JsonUtility.toString(p));
+        System.out.println(JsonUtility.toString(p,filterInfo));
+
 
     }
 
