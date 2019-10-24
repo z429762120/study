@@ -3,6 +3,7 @@ package com.tool.collect.skytools.redis;
 
 import com.tool.collect.skytools.support.constant.ErrorCode;
 import com.tool.collect.skytools.support.exception.EXPF;
+import lombok.Data;
 import org.springframework.data.redis.cache.DefaultRedisCachePrefix;
 import org.springframework.data.redis.cache.RedisCacheKey;
 import org.springframework.data.redis.cache.RedisCachePrefix;
@@ -70,5 +71,9 @@ public class RedisLock implements Serializable {
 
     public RedisCacheKey madeCacheKey(String prefix, Object key) {
         return new RedisCacheKey(key).usePrefix(cachePrefix.prefix(prefix)).withKeySerializer(redisTemplate.getKeySerializer());
+    }
+    @Data
+    class innerClass{
+        private String name;
     }
 }
