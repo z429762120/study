@@ -83,12 +83,12 @@
             <type>pom</type>
             <scope>import</scope>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <version>${version.springboot}</version>
             <optional>true</optional>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -99,11 +99,11 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>net.logstash.logback</groupId>
             <artifactId>logstash-logback-encoder</artifactId>
             <version>${version.logback}</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -198,11 +198,11 @@
         </dependency>
 
         <!-- Brantch -->
-        <dependency>
+<!--        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-batch</artifactId>
             <version>${version.boot.batch}</version>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -236,7 +236,7 @@
             <version>${version.com-aliyun-dysms}</version>
         </dependency>-->
 
-        <dependency>
+<!--        <dependency>
             <groupId>com.aliyun</groupId>
             <artifactId>aliyun-java-sdk-core</artifactId>
             <version>${version.com-aliyun-core}</version>
@@ -246,14 +246,7 @@
             <groupId>com.aliyun</groupId>
             <artifactId>aliyun-java-sdk-sts</artifactId>
             <version>${version.com.aliyun.sts}</version>
-        </dependency>
-
-        <!--JWT-->
-        <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-            <version>${version.jjwt}</version>
-        </dependency>
+        </dependency>-->
 
         <!-- httpClient -->
         <dependency>
@@ -267,7 +260,7 @@
             <version>${version.http-client}</version>
         </dependency>
 
-        <dependency>
+<!--        <dependency>
             <groupId>com.qiniu</groupId>
             <artifactId>qiniu-java-sdk</artifactId>
             <version>${version.com.qiniu}</version>
@@ -277,7 +270,7 @@
             <groupId>org.projectreactor</groupId>
             <artifactId>reactor-spring</artifactId>
             <version>${version.reactor-spring}</version>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -285,11 +278,11 @@
             <version>${version.jackson}</version>
         </dependency>
 
-        <dependency>
+<!--        <dependency>
             <groupId>com.aliyun.openservices</groupId>
             <artifactId>ons-client</artifactId>
             <version>${version.com-aliyun-openservices}</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>dom4j</groupId>
             <artifactId>dom4j</artifactId>
