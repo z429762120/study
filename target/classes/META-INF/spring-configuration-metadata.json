@@ -10,6 +10,28 @@
       "sourceType": "com.tool.collect.skytools.support.http.config.HttpManagerProperties",
       "name": "appserver.http",
       "type": "com.tool.collect.skytools.support.http.config.HttpManagerProperties"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "name": "mysql.datasource.test1",
+      "type": "com.tool.collect.skytools.mybatis.DBConfig1"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "name": "mysql.datasource.test2",
+      "type": "com.tool.collect.skytools.mybatis.DBConfig2"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.MybatisConfig1",
+      "name": "spring.datasource.test1",
+      "sourceMethod": "testDataSource(com.tool.collect.skytools.mybatis.DBConfig1)",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.MybatisConfig2",
+      "name": "spring.datasource.test2",
+      "sourceMethod": "testDataSource(com.tool.collect.skytools.mybatis.DBConfig2)",
+      "type": "javax.sql.DataSource"
     }
   ],
   "properties": [
@@ -114,6 +136,254 @@
       "name": "appserver.http.time-out-socket",
       "description": "响应超时",
       "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test1.borrow-connection-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test1.borrow-connection-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test1.login-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test1.login-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test1.maintenance-interval",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test1.maintenance-interval",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test1.max-idle-time",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test1.max-idle-time",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test1.max-lifetime",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test1.max-lifetime",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test1.max-pool-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test1.max-pool-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test1.min-pool-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test1.min-pool-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "name": "mysql.datasource.test1.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "name": "mysql.datasource.test1.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "name": "mysql.datasource.test1.test-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "name": "mysql.datasource.test1.test-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "name": "mysql.datasource.test1.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "name": "mysql.datasource.test1.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "name": "mysql.datasource.test1.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig1",
+      "name": "mysql.datasource.test1.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test2.borrow-connection-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test2.borrow-connection-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test2.login-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test2.login-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test2.maintenance-interval",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test2.maintenance-interval",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test2.max-idle-time",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test2.max-idle-time",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test2.max-lifetime",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test2.max-lifetime",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test2.max-pool-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test2.max-pool-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test2.min-pool-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "defaultValue": 0,
+      "name": "mysql.datasource.test2.min-pool-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "name": "mysql.datasource.test2.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "name": "mysql.datasource.test2.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "name": "mysql.datasource.test2.test-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "name": "mysql.datasource.test2.test-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "name": "mysql.datasource.test2.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "name": "mysql.datasource.test2.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "name": "mysql.datasource.test2.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tool.collect.skytools.mybatis.DBConfig2",
+      "name": "mysql.datasource.test2.username",
+      "type": "java.lang.String"
     }
   ]
 }
