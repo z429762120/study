@@ -1,6 +1,7 @@
 package com.tool.collect.skytools.dto;
 
 import lombok.Data;
+import org.hibernate.validator.constraints.NotEmpty;
 
 /**
  * @Descriiption
@@ -9,6 +10,7 @@ import lombok.Data;
  **/
 @Data
 public class Person {
+    @NotEmpty(message = "明知不能为空")
     private String username;
     private Integer age;
 }

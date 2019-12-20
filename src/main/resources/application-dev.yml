@@ -363,7 +363,7 @@ spring:
     password: "111111"
     timeout: 10000
   rabbitmq:
-    enabled: true
+    enabled: false
     #集群条件下的设置
     #addresses: 106.14.176.213:5672,101.132.123.47:5672
     host: 47.106.87.193

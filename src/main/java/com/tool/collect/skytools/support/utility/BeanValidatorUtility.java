@@ -1,5 +1,6 @@
 package com.tool.collect.skytools.support.utility;
 
+import com.tool.collect.skytools.dto.Person;
 import com.tool.collect.skytools.support.exception.EXPF;
 import org.hibernate.validator.internal.engine.ValidatorImpl;
 import org.springframework.context.ApplicationContext;
@@ -8,6 +9,7 @@ import org.springframework.validation.Validator;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
 import javax.validation.ConstraintViolation;
+import javax.validation.Validation;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -55,5 +57,22 @@ public class BeanValidatorUtility {
             return EXPF.E300(error, true);
         }
         return null;
+    }
+
+    public static void main(String[] args) {
+        Person p = new Person();
+        p.setAge(1);
+        javax.validation.Validator validator1 = Validation.buildDefaultValidatorFactory().getValidator();
+
+        Set<ConstraintViolation<Person>> constraintViolations = validator1.validate(p);
+        if (!CollectionUtils.isEmpty(constraintViolations)) {
+            Map<String, String> error = new HashMap<>();
+            constraintViolations.forEach(violation -> {
+                String s = violation.getPropertyPath().toString();
+                String message = violation.getMessage();
+                error.put(s, message);
+            });
+
+        }
     }
 }

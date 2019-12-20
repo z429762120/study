@@ -1,5 +1,9 @@
 package com.tool.collect.skytools.service;
 
+import com.tool.collect.skytools.dto.Person;
+
+import java.util.List;
+
 /**
  * @Descriiption
  * @Author bo
@@ -11,4 +15,8 @@ public interface TestService {
      * @param i
      */
     void multiDataSourceTest(int i);
+
+    List<Person> findByName(String name);
+
+    void testJvm();
 }

@@ -32,4 +32,9 @@ public class TestController {
     public void multiDataSourceTransicational(int i) {
         testService.multiDataSourceTest(i);
     }
+
+    @GetMapping("testJvm")
+    void testJvm() {
+        testService.testJvm();
+    }
 }
