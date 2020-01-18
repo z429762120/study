@@ -4,7 +4,6 @@ import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageProperties;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.nio.charset.StandardCharsets;
 
@@ -13,7 +12,7 @@ import java.nio.charset.StandardCharsets;
  * @Author bo
  * @Date 2019/4/10 上午11:50
  **/
-@Component
+//@Component
 public class RabbitmqSender {
     @Autowired
     AmqpTemplate amqpTemplate;

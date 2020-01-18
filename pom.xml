@@ -15,7 +15,6 @@
     <description>Demo project for Spring Boot</description>
 
     <properties>
-        <!-- <docker.image.prefix>aimymusic-play-server</docker.image.prefix>-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.encoding>UTF-8</project.build.encoding>
@@ -43,9 +42,8 @@
         <version.com.aliyun.sts>3.0.0</version.com.aliyun.sts>
         <version.jjwt>0.9.0</version.jjwt>
         <version.http-client>4.5.2</version.http-client>
-        <version.com.qiniu>7.2.11</version.com.qiniu>
         <version.reactor-spring>1.0.1.RELEASE</version.reactor-spring>
-        <version.kafka>2.1.0.RELEASE</version.kafka>
+        <version.kafka>2.3.0.RELEASE</version.kafka>
         <version.kafka.clients>2.0.0</version.kafka.clients>
         <version.jackson>2.9.0.pr3</version.jackson>
         <version.com-aliyun-openservices>1.6.0.Final</version.com-aliyun-openservices>
@@ -62,6 +60,11 @@
             <groupId>com.xuxueli</groupId>
             <artifactId>xxl-job-core</artifactId>
             <version>2.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.3.0</version>
         </dependency>
         <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -99,11 +102,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-<!--        <dependency>
-            <groupId>net.logstash.logback</groupId>
-            <artifactId>logstash-logback-encoder</artifactId>
-            <version>${version.logback}</version>
-        </dependency>-->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -127,15 +126,26 @@
 
         <!-- kafka -->
         <dependency>
-            <groupId>org.apache.kafka</groupId>
-            <artifactId>kafka-clients</artifactId>
-            <version>${version.kafka.clients}</version>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
-            <version>${version.kafka}</version>
+            <version>1.1.1.RELEASE</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.kafka</groupId>
+                    <artifactId>kafka-clients</artifactId>
+                </exclusion>
+            </exclusions>
+           <!-- <version>2.3.3.RELEASE</version>-->
+            <!--<version>${version.kafka}</version>-->
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>0.10.1.0</version>
+        </dependency>
+
+
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -260,13 +270,7 @@
             <version>${version.http-client}</version>
         </dependency>
 
-<!--        <dependency>
-            <groupId>com.qiniu</groupId>
-            <artifactId>qiniu-java-sdk</artifactId>
-            <version>${version.com.qiniu}</version>
-        </dependency>
-
-        <dependency>
+<!--  <dependency>
             <groupId>org.projectreactor</groupId>
             <artifactId>reactor-spring</artifactId>
             <version>${version.reactor-spring}</version>
@@ -277,12 +281,6 @@
             <artifactId>jackson-core</artifactId>
             <version>${version.jackson}</version>
         </dependency>
-
-<!--        <dependency>
-            <groupId>com.aliyun.openservices</groupId>
-            <artifactId>ons-client</artifactId>
-            <version>${version.com-aliyun-openservices}</version>
-        </dependency>-->
         <dependency>
             <groupId>dom4j</groupId>
             <artifactId>dom4j</artifactId>

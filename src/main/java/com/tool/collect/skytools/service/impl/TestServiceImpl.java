@@ -46,7 +46,7 @@ public class TestServiceImpl implements TestService {
         byte[] array4 = new byte[1024 * 1024];
         byte[] array5 = new byte[1024 * 1024];
         byte[] array6 = new byte[1024 * 1024];
-        log.info(Thread.currentThread().getName()+"---> 产生6M的数据");
+        log.info(Thread.currentThread().getName()+"---> 产生6M的数据！！！");
     }
 
 

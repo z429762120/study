@@ -81,90 +81,12 @@ appserver:
     retry-number: 2
     max-total: 500
     client-properties:
-      minik:
-        host: "119.146.204.122:18890"
-        v3Host: "119.146.204.122:18891"
-        max-pre-route: 300
-        url-map:
-          key: aamactivemachine
-          webApiKey: AIE_WEB
-          getSongByNumber: /get_song_by_number
-
       qq:
         host: "graph.qq.com"
         max-pre-route: 5
         url-map:
           appKey: "1106308466"
           getUserInfo: /user/get_user_info
-
-      wechat:
-        host: "api.weixin.qq.com"
-        max-pre-route: 100
-        url-map:
-          appId: "wx6cfb5146066fbc02"
-          appSecret: "2654b001dc234d2e4f2354100df3d51e"
-          officialAccountsAppId: "wx1f6b0505b3d835cd"
-          officialAccountsAppSecret: "925ef5941e30de2965b1f33ad370afe2"
-          webApiKey: AIE_WEB
-          getToken: /sns/oauth2/access_token
-          getUserInfo: /sns/userinfo
-          getGlobalToken: /cgi-bin/token
-          getTicket: /cgi-bin/ticket/getticket
-
-      alipay:
-        host: "openapi.alipaydev.com"
-        max-pre-route: 200
-        url-map:
-          appId: 2017073107968945
-          publicKey: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk2G2EjoN3PtQQQQlbt9nfZbFS4QkBPnt+W/Pi6V0P18t3xYLNa8rPt7EVWXwnuA6lEUDaT3ek/zLBfFRtOVpMkGFI2qHmuzrX7ICYzjiQ4pslslALL2ISjFs4ChbhZPGDqAfLEyunHnq5mJnoDhzrGtPbfvdF1LoIZZiAEySkyWOPF93oa1jUMI5uMqo7Ct5YbuxaBg67JsLBDwSECiRte6m1lE+joLeoMEFJTZy5RF8uoIrMM/u4CxEKEwFvOjjwvKnNOZneuzcFLM2lBP3T2e/IR6B+flAJDYhwTPvES630wZMHNTgDBTNu1K1lIDBoNOw8gtGqoesUwghWpI0CQIDAQAB"
-          privateKey: "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCKH8S3FwhEcfrNZl7HAwpu7JkcnzomEX4sBgJ+bLDz8RTGG0cWnkddB6tCjsJkOOwokMPRlANb/5AfYBdPoNOHOvyppEDCIgQfsRNqcie4FQSyEjP8HMsdY/cPsR71vVtbBnhldd9KaaDU5yVAjctiHtB/0W4TaRXNW5d9hOulVRO3z7HWDnP+wsz5SuPAtuuLcBP6d54jrBcECkm09doxxkpdXoAdUnIlE+0bS7ZH4PFfUEQxrwLKVP5HfpL876tHJI88PGXp+/MxyewqhofVw30PgsZnYMK9imFkhHZX+LOvxwV3bbk5rFricn323dSYfBm9zbhC7Bl7zxqXhqUXAgMBAAECggEAFulUISbB6VCa0K11dT+M4H+Aml3TMHNgYX8RtNTkuWI5Fu95aEgTAFyATQcPOb6zdbslsEMEF6OZzYqL81pzHBBtztn/H/SyiGtAFD0hV4itAbjBRMWl75cgaUrxHsQtPjkhiXr28gn5crdw13dt0DXaUgl0X+Xjhu/1fg2pZQAqT4WOX/cwGKJQ2VSiNsj4PBfUbOhF+o4XOi2EGg+flhrvDGAyjTUw7ZpKeDNuaWL0harDOBrpvhM9QoQamQTX7WumAZahDfhuzNt6e03geS8J9sjl7YAH7qxzx2Sd/IV4U/lewDYLUEYPpMOvGH02NSo8kfs9qK749FXzov3yoQKBgQDzYQj6d2HlMr2HrxUX7ePm8i5SrHrNQ5gyA0q95eoOELX8aIRu759Nh0VpKzrOU+bV0kiM6nduA6vwWpVIqksyAepmQnGwRrqcPg/VA01Lm+hnWGYhNSaveWk8IHMT93CxUlmDTbBAeftMXGCD2lONLY6oDelCKoroaW8dc3p6pwKBgQCRSW1ZxjSNGwp8tXC/8e2UpU/3ZxMAbK+/CSlGKT6r2ZqmkErSJvKCiMW63aEs+qf+qlF5Ru5xH47QI49IpeCebKJsrFkeOk9VRfP9OyMy4CtoF+y03tFR0aY1ruBYuAEyBHeYBrpNw7uz6WRInpHkdNTFZfQPJCmsA2ZrF4eAEQKBgFW+XPxo7Ntj2fQgkczhacZmkj1cONNyOf98u2tVwfT8nDD13Zp732LgAms/6LLiSlQQhrDmtfbTYlMGhsuX+2/9zsgCJq2U7Y+4KbnBNQ0rO2CVez29zQhLPPEK+aASL+i4+4JP74V3tDo93V72nzMA1t6MMB64gEHLS3NTyNXHAoGAMpPsVIdyvfi+8uE7SicPvWK7bvZcIBa2K/wleT5cifjsJLYwxe43GIhCxaXoOT9dgoOKb3zo/0qsLftjIzhT9PL+rHRnZeWIvrfmk66lt01g7xD9H44+MoyYnzGs+lW8XMw/UhZtfyr3yk8i0UEaqvydIcc3apn9Q9u/KOL9EfECgYEA6KZFMIU+pRuc3MQV/5wviMuEpTnG3L0Oaa7t6/z7AisoVTNzweeiIany1Pu8ExapgfTaGGTYYYslfBPiGyv2Y92YofB90TJjIIaMBocU9v747LzZq/k6KdoSowoc7oEbAhkhC7wdJ9tVRsPXk/mNouQilx51bbdgKZEP7ESwrEg="
-          path: /gateway.do
-          payAppId: 2016082000293941
-          payPublicKey: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArY3c9i+aSWJMMsPEMRqWRfhNHVMxX8UCk4F9snyGSgEhfbHHJBIMth9xX9hC6yjemT2kZDglsmRHUPt+STn1OQbd0JRqdKfzizbU7p/ME4i462ZUvLHUnhohTFS626K1ZgaAlAcmFv7nV0OVrcFwx4pRbvujFcWkFIR3PVEvihNVhfAppaV2ZaYGvx1LQrBEz4SUqv8iMlAQ1h7t/isnVC1WhILM/BitAxvJOi+eRWFnZCwWc7CSjlDNjCJ8mF/+A66GjS/ODEW0cm45xeJeUcGy8zaoPnNbw2y7o60wG0lgodMUfgg3x+YN5sug5+6UB3sZGHPrwa5qyg+HknN2ywIDAQAB"
-          payPrivateKey: "MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCRxTaIXAmpIQax7ReJQnSp8u9SrPQ+6XG5ju0ST6k2L8QP1mQ7r/MgnPhnlQJv2Z1VrROXwvdPrjIt6nEjxtEwT31TmT8ff1gHJ/Ki/2Fr7u6RJJUYaJuQi0tuafaBx2L8xWWq1RrrZIL2mW436J4yBNC9apPsPmxXVc+PqR15AwINJfeHg6WkpruE8L/jGmOaSEVY1N1+xrh7dI7DcwjOL6JrqgCj+1ZLBDPvgZQfYmj5YKEmC+O8dhQ3fhupOWmi/OugGgpPXnreV2WlPyqPMSskZC/9a8WwBue3stZr7DPDmGBlEFKA3Mvn/SZ0yaBS006DVIFWFEgnhKzRXeBfAgMBAAECggEAVi2qjLkk+PlOdPg/VuWUBTlbZZxclaj7lAE8hPvVhPR+TAKqpWLjMN+8N7ivhSK5UoKNN8aK4W+RuPWGR+ltmMsVw8uwttVZXHmwh87FcMMEBYkEIDcP6UeAo9k/ZABVtCyba4CrdoioqFOTBriedeHE6obMxvksogFYQY1woC5R1jMDLSBtkafYvvi1FJ2QAL+05i2pDjcR8OcdeecIiYmCQ267D0JvNCMo7PMIjlITrY3H7jICIVwQcrhlkqJ0YvAs0MGZLJ8eZ9V5VRhc3Y+vgHhHX1b17YrNnHuFBxKwwJA4WbpbA5v9zf6uOEwVPH2GT1iGyOhDtSe9V/VZ4QKBgQDbMO7Q3n7Nro4zPq+K9piMwzsRdSVmP+iT3ydgx3Yms1ot6s3AQ5WmZfQHJMIuyXv8BD6mUXknoSeWpstd+7VIze+AHsJQwgaSSYYPuiZ16mRYetXJ1VMsozVbGY8UkNxz3WsBVJByG741DZgiRR2EKMmE5JdJUBMvVC34xRqlEQKBgQCqP+hNtw/i7BpTrMVJUYdTZ85qcli8ndILQ95zsPcSjxvdJMSN7uMXNZxE68+UlQCVfTvKlYARJ0jL1+f5WtGlHv9mn3Zvnx13fAIR6zeq8CjL0O49MaDTUrtyZDZrZS0FaALNEd6CEBBJz+ERK3K/nKZtolCUp62W/T7wrbNubwKBgHD+y85fNO1hdCsUwLgZodDHAFdilbIddg9s9cbdbJpM0UtkhUb9UFNksaVRHM2zzre/lHB3BccZO+hc+e/sR6tNho78zF2HeI3HW1YWN6eH+szmHfobf/I9/M6G4YzPlOYiGfyolIJOrQJ6jJf2G147DI/2q8r+fbVjZwOc0LyRAoGAQ+Z9JhGu2lhEH782aAmGKXOrVbUJQyDGlwuYexfHUrWU7VwusFToaWdOTgamoaHTu8tYv3FkxHKgi/wuXrskBfEY97r9p4MUY4Un5jGj4B8shi1r9ygF9oJ2lCb3tVmC3Tcgdt17mvABLw8juo9TkqxNjEhCTyeZCjEymxcMCy0CgYAPf/oWHnE/7+2pSskqsN2K8VkSmxLMj6s7kkNXAkSXOrt32ZtdyhEqiWAxI2DBM0RqfaulPwUzmNxJZJGwNXp3o5ZPX6Ux/rMFN6CJbtVA/EPezT/6F+d//x6tIng1ehUkWB8rkhwZ9VZNvmVUEdS8vP7W26cm6EiCfTDCGDrmMA=="
-          getOauthToken: "alipay.system.oauth.token"
-          getUserInfo: "alipay.user.info.share"
-          createTrade: "alipay.trade.create"
-          queryTrade: "alipay.trade.query"
-          payAppTrade: "alipay.trade.app.pay"
-          refundTrade: "alipay.trade.refund"
-          refundQuery: "alipay.trade.fastpay.refund.query"
-          notify_url: "dev.aimymusic.com/api/pay/receiveAliNotify"
-          product_code: "QUICK_MSECURITY_PAY"
-          pid: 2088721665760057
-          payPid: 2088102172204726
-          getAuthCode: "alipay.open.auth.sdk.code.get"
-
-      wechatpay:
-        host: "api.mch.weixin.qq.com"
-        max-pre-route: 200
-        url-map:
-          appId: "wx6cfb5146066fbc02"
-          mchId: "1269456201"
-          apiKey: "8e3d30fadt6f138a3u0i718dd2h2r2ds"
-          getPay: /pay/unifiedorder
-          refundTrade: /secapi/pay/refund
-          certPath: "/usr/local/aimy_music/apiclient_cert.p12"
-          notifyUrl: "dev.aimymusic.com/api/pay/receiveWeChatNotify"
-
-      amap:
-        host: "restapi.amap.com"
-        max-pre-route: 300
-        url-map:
-          geocode: "/v3/geocode/regeo"
-          getDistrict: "/v3/config/district"
-          key: "ffde9ce7b32f54762344fa738baa8de6"
-
-      umeng:
-        host: "api.umeng.com"
-        max-pre-route: 300
-        url-map:
-          username: "company@aimymusic.com"
-          password: "aimymusic2017"
-          androidAppKey: "5a2130a7f29d987a35000346"
-          iosAppKey: "5a213188f29d98253b000016"
-          authToken: "/authorize"
-          baseData: "/base_data"
 
   shiro:
     app:
