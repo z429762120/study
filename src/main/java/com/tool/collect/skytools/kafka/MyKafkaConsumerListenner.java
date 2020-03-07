@@ -3,7 +3,6 @@ package com.tool.collect.skytools.kafka;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.support.Acknowledgment;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
@@ -12,11 +11,11 @@ import java.util.List;
  * @Author bo
  * @Date 2020/1/17 下午3:52
  **/
-@Component
+//@Component
 public class MyKafkaConsumerListenner {
 
     /**
-     * 如果启动批量提交，参数只接口list,AckMode={MANUAL,MANUAL_IMMEDIATE}模式下才能手动提交offset
+     * 如果启动批量提交，参数只接收list,AckMode={MANUAL,MANUAL_IMMEDIATE}模式下才能手动提交offset
      * @param list
      * @param ack
      * @throws Exception

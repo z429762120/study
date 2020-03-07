@@ -24,45 +24,12 @@ mysql:
       maxIdleTime: 60
 
 appserver:
-  jdbc:
-    enable-lazy-proxy: true
-    enable-dynamic-switching: true
-    default-data-source:
-      name: "default"
-      base-url: "jdbc:mysql://47.106.87.193:3306"
-      db: "liubo"
-      search-url: "rewriteBatchedStatements=true&useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true"
-      driver-class-name: "com.mysql.jdbc.Driver"
-      username: "case"
-      password: "Lh19890624."
-      initial-size: 50
-      min-idle: 50
-      max-idle: 100
-      max-active: 400
-      max-wait: 2000
-      test-while-idle: true
-      test-on-borrow: true
-      test-on-return: false
-      validation-interval: 30000
-      validation-query: "select 1"
-      time-between-eviction-runs-millis: 30000
-      min-evictable-idle-time-millis: 300000
-      remove-abandoned-timeout: 120
-      remove-abandoned: true
-      default-read-only: false
-      default-auto-commit: true
-#    data-source:
-#      - {name: "slave",db: "aimymusic",base-url: "jdbc:mysql://127.0.0.1:3306",username : "root", password: "123456",search-url: "rewriteBatchedStatements=true&useUnicode=true&characterEncoding=utf8&useSSL=true"}
-#      - {name: "minik",db: "", base-url: ""}
-
   jpa:
     enabled: false
     enable-transaction: true
 
   mybatis:
     enabled: false
-    type-aliases-package: "com.aimymusic.appserver.persist.dto"
-    type-handlers-package: "com.aimymusic.appserver.persist.typeHandler"
     mapper-locations: "classpath:mapper/*.xml"
 
   unify:

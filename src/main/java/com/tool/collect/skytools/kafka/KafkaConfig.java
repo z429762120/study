@@ -4,7 +4,6 @@ import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 import org.springframework.kafka.config.KafkaListenerContainerFactory;
 import org.springframework.kafka.core.*;
@@ -19,7 +18,7 @@ import java.util.Map;
  * @Author bo
  * @Date 2020/1/16 下午6:58
  **/
-@Configuration
+//@Configuration
 public class KafkaConfig {
     @Autowired
     private KafkaConfiguration configuration;

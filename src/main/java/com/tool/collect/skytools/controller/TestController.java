@@ -35,7 +35,7 @@ public class TestController {
 
     @GetMapping("testJvm")
     void testJvm() {
-        System.out.println("接口调用");
+        System.out.println("接口调用1");
         testService.testJvm();
     }
 }

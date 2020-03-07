@@ -4,14 +4,11 @@ import com.mysql.jdbc.jdbc2.optional.MysqlXADataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.jta.atomikos.AtomikosDataSourceBean;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;
@@ -21,9 +18,9 @@ import java.sql.SQLException;
  * @Author bo
  * @Date 2019/10/9 下午2:06
  **/
-@Configuration
-@EnableConfigurationProperties(DBConfig2.class)
-@MapperScan(basePackages = {"com.tool.collect.skytools.mapper2"},sqlSessionTemplateRef = "test2SqlSessionTemplate")
+//@Configuration
+//@EnableConfigurationProperties(DBConfig2.class)
+//@MapperScan(basePackages = {"com.tool.collect.skytools.mapper2"},sqlSessionTemplateRef = "test2SqlSessionTemplate")
 public class MybatisConfig2 {
 
 
