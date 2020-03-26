@@ -13,7 +13,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.lang.ref.SoftReference;
 import java.lang.ref.WeakReference;
-import java.util.List;
 
 /**
  * @Descriiption
@@ -40,11 +39,7 @@ public class JunitTest  {
         System.out.println(person.toString());
     }
 
-    @Test
-    public void test2() {
-        List<Person> list = testService.findByName("张三");
-        System.out.println(list);
-    }
+
 
     public static void main(String[] args) {
         /**软引用*/

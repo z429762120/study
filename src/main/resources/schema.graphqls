@@ -1,0 +1,25 @@
+type Query {
+  smsLogin(mobileNumber: String!,smsCode:String!): String
+  userInfo(token: String):UserInfo
+}
+
+type UserInfo {
+  organizationName: String,
+  organizationContactName: String,
+  organizationPhone: String,
+  organizationAddress: String,
+  detailAddress: String,
+  organizationType: Int,
+  organizationAreaCode: String,
+  ecommerceId: Int,
+  personName: String,
+  personPhone: String,
+  personId: String,
+  organizationId: String,
+  dogs:[Dog],
+  roleIdlist: [String]
+}
+
+type Dog {
+  name: String
+}
