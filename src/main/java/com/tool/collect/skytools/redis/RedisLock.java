@@ -1,3 +1,4 @@
+/*
 package com.tool.collect.skytools.redis;
 
 
@@ -12,12 +13,14 @@ import org.springframework.data.redis.core.RedisTemplate;
 import java.io.Serializable;
 import java.util.Random;
 
+*/
 /**
  * Redis锁
  *
  * @author Gnoll
  * @create 2017-08-04 11:01
- **/
+ **//*
+
 public class RedisLock implements Serializable {
 
     private static final long MILLI_NANO_TIME = 1000 * 1000L;
@@ -31,12 +34,14 @@ public class RedisLock implements Serializable {
         this.redisTemplate = redisTemplate;
     }
 
-    /**
+    */
+/**
      * 加锁
      *
      * @param timeOut 取锁超时时间
      * @param expire  锁自动过期时间
-     */
+     *//*
+
     public Boolean lock(RedisCacheKey cacheKey, long timeOut, long expire) throws Exception {
         try {
             Object execute = redisTemplate.execute((RedisCallback<Boolean>) connection -> {
@@ -72,3 +77,4 @@ public class RedisLock implements Serializable {
         return new RedisCacheKey(key).usePrefix(cachePrefix.prefix(prefix)).withKeySerializer(redisTemplate.getKeySerializer());
     }
 }
+*/

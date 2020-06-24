@@ -103,7 +103,6 @@ public class KafkaConfig {
         props.put(ConsumerConfig.AUTO_COMMIT_INTERVAL_MS_CONFIG, 6000);
         // 消费组失效超时时间
         props.put(ConsumerConfig.SESSION_TIMEOUT_MS_CONFIG, 10000);
-
         // 位移丢失和位移越界后的恢复起始位置
         props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "latest");
         //每次poll()拉取消息条数
@@ -138,7 +137,6 @@ public class KafkaConfig {
      */
     @Bean("defaultKafkaListenerContainerFactory")
     public KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, String>> kafkaListenerContainerFactory() {
-
         ConcurrentKafkaListenerContainerFactory<String, String> factory = new ConcurrentKafkaListenerContainerFactory<>();
         // 设置消费者工厂
         factory.setConsumerFactory(consumerFactory());
@@ -152,7 +150,8 @@ public class KafkaConfig {
         //是否开启kafka消费者自动监听,false需要手动开启
         //factory.setAutoStartup(false);
         factory.getContainerProperties().setAckMode(AbstractMessageListenerContainer.AckMode.MANUAL_IMMEDIATE);
-        //
+        //再均衡监听器
+        factory.getContainerProperties().setConsumerRebalanceListener(new MyConsumerRebalanceListener());
         return factory;
     }
 }

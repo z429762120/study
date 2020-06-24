@@ -1,12 +1,10 @@
 package com.tool.collect.skytools.support.encrypt;
 
-import com.tool.collect.skytools.support.exception.EXPF;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.codec.binary.StringUtils;
 import org.apache.commons.codec.digest.DigestUtils;
-import org.hibernate.validator.internal.util.logging.Log;
-import org.hibernate.validator.internal.util.logging.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,9 +16,9 @@ import java.security.MessageDigest;
  * @author Gnoll
  * @create 2017-07-03 10:18
  **/
+@Slf4j
 public class EncryptorUtility {
 
-    protected static final Log log = LoggerFactory.make();
 
     private String key;
 
@@ -186,14 +184,14 @@ public class EncryptorUtility {
         try {
             out.write(this.decode(str));
         } catch (IOException e) {
-            log.error(EXPF.getExceptionMsg(e));
+           // log.error(EXPF.getExceptionMsg(e));
         } finally {
             if (null != out) {
                 try {
                     out.close();
                 } catch (IOException e) {
                     // TODO Auto-generated catch block
-                    log.error(EXPF.getExceptionMsg(e));
+                   // log.error(EXPF.getExceptionMsg(e));
                 }
             }
         }

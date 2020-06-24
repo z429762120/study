@@ -1,3 +1,4 @@
+/*
 package com.tool.collect.skytools.support.aop;
 
 
@@ -14,20 +15,20 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;
-import org.springframework.data.redis.cache.RedisCacheKey;
-
 import java.beans.PropertyDescriptor;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.util.Map;
 
+*/
 /**
  * 缓存锁切面
  *
  * @author Gnoll
  * @create 2017-08-04 10:30
- **/
+ **//*
+
 @Aspect
 @Order(4)  // 执行顺序
 public class CacheLockAspect {
@@ -120,3 +121,4 @@ public class CacheLockAspect {
         }
     }
 }
+*/

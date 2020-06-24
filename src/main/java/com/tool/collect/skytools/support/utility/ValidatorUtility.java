@@ -2,8 +2,7 @@ package com.tool.collect.skytools.support.utility;
 
 import com.tool.collect.skytools.support.exception.EXPF;
 import lombok.experimental.UtilityClass;
-import org.hibernate.validator.internal.util.logging.Log;
-import org.hibernate.validator.internal.util.logging.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -18,10 +17,10 @@ import java.util.regex.Pattern;
  * @author Gnoll
  * @create 2017-06-16 19:42
  */
+@Slf4j
 @UtilityClass
 public class ValidatorUtility {
 
-    protected static final Log log = LoggerFactory.make();
 
     public final int START_YEAR = 1900;
     public final int END_YEAR = 2100;

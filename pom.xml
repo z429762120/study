@@ -66,11 +66,12 @@
             <artifactId>cglib</artifactId>
             <version>3.3.0</version>
         </dependency>
-        <!--<dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
-        </dependency>
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>1.4.7.RELEASE</version>
+        </dependency>
+        <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka-server</artifactId>
         </dependency>-->
@@ -167,12 +168,25 @@
             <version>${version.spring-test}</version>
         </dependency>
 
-        <!-- httpClient -->
+        <!--Apach Httpclient-->
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-httpclient</artifactId>
+            <version>9.7.0</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
+            <artifactId>httpmime</artifactId>
             <version>${version.http-client}</version>
         </dependency>
+
+
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-okhttp</artifactId>
+            <version>9.5.0</version>
+        </dependency>
+
         <!--Spring Boot通过spring-boot-starter-data-jpa来提供对JPA的支持，Spring Boot默认的JPA实现者是Hibernate。
          由于pom.xml文件中有定义spring-boot-starter-data-jpa。
          <dependency>
@@ -184,10 +198,7 @@
          JpaRepositoriesAutoConfiguration
          HibernateJpaAutoConfiguration
 
-         只要有此定义，JpaMetamodelMappingContext类在启动过程中会进行检查，至少得定义一个JPA metamode，否则就报At least one JPA metamodel must be present!错误。
-         ————————————————
-         版权声明：本文为CSDN博主「穿过午夜」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
-         原文链接：https://blog.csdn.net/cysunc/article/details/86495844-->
+         只要有此定义，JpaMetamodelMappingContext类在启动过程中会进行检查，至少得定义一个JPA metamode，否则就报At least one JPA metamodel must be present!错误。-->
 <!--        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -257,18 +268,6 @@
             <artifactId>aliyun-java-sdk-sts</artifactId>
             <version>${version.com.aliyun.sts}</version>
         </dependency>-->
-
-        <!-- httpClient -->
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>${version.http-client}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpmime</artifactId>
-            <version>${version.http-client}</version>
-        </dependency>
 
 <!--  <dependency>
             <groupId>org.projectreactor</groupId>

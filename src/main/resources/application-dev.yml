@@ -117,3 +117,7 @@ xxl.job.accessToken:
 xxl.job.executor.logpath: /Users/bo/logs/xxl-job/jobhandler
 ### xxl-job log retention days
 xxl.job.executor.logretentiondays: -1
+
+feign.httpclient.enabled: false
+feign.okhttp.enabled: true
+

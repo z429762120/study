@@ -2,9 +2,6 @@ package com.tool.collect.skytools.rabbitmq;
 
 
 import com.tool.collect.skytools.rabbitmq.listener.QueueAListener;
-import com.tool.collect.skytools.support.constant.ExchangeConstant;
-import com.tool.collect.skytools.support.constant.QueueConstant;
-import com.tool.collect.skytools.support.constant.RoutingKeyConstants;
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
@@ -34,12 +31,12 @@ public class RabbitmqConfiguration {
      */
     @Bean
     public Queue QueueA() {
-        return new Queue(QueueConstant.TEST_A);
+        return new Queue("123");
     }
 
     @Bean
     public Queue QueueB() {
-        return new Queue(QueueConstant.TEST_B);
+        return new Queue("234");
     }
 
     /**
@@ -66,12 +63,12 @@ public class RabbitmqConfiguration {
      */
     @Bean
     FanoutExchange fanoutExchange() {
-        return new FanoutExchange(ExchangeConstant.FANOUT_EXCHANGE);
+        return new FanoutExchange("FanoutExchange");
     }
 
     @Bean
     TopicExchange topicExchange() {
-        return new TopicExchange(ExchangeConstant.TOPIC_EXCHANGE);
+        return new TopicExchange("TopicExchange");
     }
 
     /**
@@ -85,7 +82,7 @@ public class RabbitmqConfiguration {
     }
     @Bean
     Binding bindingTopicExchange() {
-        return BindingBuilder.bind(QueueB()).to(topicExchange()).with(RoutingKeyConstants.TEST_KEY);
+        return BindingBuilder.bind(QueueB()).to(topicExchange()).with("routingKey");
     }
 
     /**

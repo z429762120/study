@@ -1,7 +1,6 @@
 package com.tool.collect.skytools.support.utility;
 
 import com.tool.collect.skytools.dto.Person;
-import com.tool.collect.skytools.support.exception.EXPF;
 import org.hibernate.validator.internal.engine.ValidatorImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.util.CollectionUtils;
@@ -40,7 +39,7 @@ public class BeanValidatorUtility {
                 String message = violation.getMessage();
                 error.put(s, message);
             });
-            return EXPF.E300(error, true);
+            //return EXPF.E300(error, true);
         }
         return null;
     }
@@ -54,7 +53,7 @@ public class BeanValidatorUtility {
                 String message = violation.getMessage();
                 error.put(prefix+"."+s, message);
             });
-            return EXPF.E300(error, true);
+            //return EXPF.E300(error, true);
         }
         return null;
     }

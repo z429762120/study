@@ -3,8 +3,12 @@ package com.tool.collect.skytools.kafka;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.clients.consumer.OffsetAndMetadata;
+import org.apache.kafka.common.TopicPartition;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 /**
@@ -40,13 +44,22 @@ public class ConsumerDemo {
         //receive.buffer.bytes和send.buffer.bytes：指定了 TCP socket 接收和发送数据包的缓冲区大小，默认值为-1
 
         KafkaConsumer<String, String> kafkaConsumer = new KafkaConsumer<>(properties);
-        kafkaConsumer.subscribe(Arrays.asList("ttt"));
-        while (true) {
-            ConsumerRecords<String, String> records = kafkaConsumer.poll(3);
-            for (ConsumerRecord<String, String> record : records) {
-                System.out.printf("offset = %d, key=%s, value = %s,partition=%s", record.offset(),record.key() ,record.value(),record.partition());
-                System.out.println("=====================>");
+        kafkaConsumer.subscribe(Arrays.asList("ttt"), new MyConsumerRebalanceListener());
+        try {
+            while (true) {
+                Map<TopicPartition, OffsetAndMetadata> offsets = new HashMap<>();
+                ConsumerRecords<String, String> records = kafkaConsumer.poll(3);
+                for (ConsumerRecord<String, String> record : records) {
+                    TopicPartition partition = new TopicPartition(record.topic(), record.partition());
+                    OffsetAndMetadata metadata = new OffsetAndMetadata(record.offset()+1, "no metadata");
+                    offsets.put(partition, metadata);
+                }
+                kafkaConsumer.commitAsync(offsets,null);
             }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            kafkaConsumer.commitSync();
         }
 
     }

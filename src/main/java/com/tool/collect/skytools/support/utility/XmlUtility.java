@@ -1,13 +1,11 @@
 package com.tool.collect.skytools.support.utility;
 
-import com.tool.collect.skytools.support.exception.EXPF;
 import lombok.experimental.UtilityClass;
+import lombok.extern.slf4j.Slf4j;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
-import org.hibernate.validator.internal.util.logging.Log;
-import org.hibernate.validator.internal.util.logging.LoggerFactory;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
@@ -20,10 +18,10 @@ import java.util.*;
  * @author Gnoll
  * @create 2017-07-03 10:15
  **/
+@Slf4j
 @UtilityClass
 public class XmlUtility {
 
-    protected static final Log log = LoggerFactory.make();
 
     /**
      * request转字符串
@@ -48,9 +46,9 @@ public class XmlUtility {
                 }
             }
         } catch (UnsupportedEncodingException e) {
-            log.error(EXPF.getExceptionMsg(e));
+           // log.error(EXPF.getExceptionMsg(e));
         } catch (IOException e) {
-            log.error(EXPF.getExceptionMsg(e));
+            //log.error(EXPF.getExceptionMsg(e));
         }
         return body;
     }
