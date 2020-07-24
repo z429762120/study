@@ -44,7 +44,6 @@ public class TestServiceImpl implements TestService {
         p.setAge(11);
         p.setUsername("sss");
         PropertyFilterInfo filterInfo = new PropertyFilterInfo("age");
-
         System.out.println(JsonUtility.toString(p));
         System.out.println(JsonUtility.toString(p,filterInfo));
 
