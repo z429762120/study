@@ -1,5 +1,6 @@
 package com.tool.collect.skytools.controller;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.expression.EvaluationContext;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
@@ -14,6 +15,8 @@ import org.springframework.expression.spel.support.StandardEvaluationContext;
 public class SpEL {
 
     public static void main(String[] args) {
+        System.out.println(StringUtils.leftPad("510100".substring(2), 5, '0'));
+
         ExpressionParser parser = new SpelExpressionParser();
         //Expression expression = parser.parseExpression("#{T(Math).min(10,8)}",new TemplateParserContext());
         Expression expression = parser.parseExpression("T(Math).min(10,8)");
