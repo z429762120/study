@@ -14,6 +14,7 @@ public class DBConfig1 {
     private String url;
     private String username;
     private String password;
+    private String driverClassName;
     private int minPoolSize;
     private int maxPoolSize;
     private int maxLifetime;

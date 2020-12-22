@@ -1,5 +1,6 @@
 package com.tool.collect.skytools.controller;
 
+import com.tool.collect.skytools.dto.TestLocalDate;
 import com.tool.collect.skytools.service.TestService;
 import com.tool.collect.skytools.support.aop.annotation.IpIntercept;
 import org.hibernate.validator.constraints.NotBlank;
@@ -38,4 +39,11 @@ public class TestController {
         System.out.println("接口调用1");
         testService.testJvm();
     }
+
+    @GetMapping("testLocalDateMysql")
+    public void testLocalDateMysql(TestLocalDate testlocaldate) {
+        testService.testLocalDateMysql(testlocaldate);
+    }
+
+
 }

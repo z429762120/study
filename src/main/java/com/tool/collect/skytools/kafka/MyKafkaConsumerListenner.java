@@ -1,7 +1,9 @@
 package com.tool.collect.skytools.kafka;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.Acknowledgment;
 
 import java.util.List;
@@ -13,6 +15,9 @@ import java.util.List;
  **/
 //@Component
 public class MyKafkaConsumerListenner {
+    @Autowired
+    KafkaTemplate kafkaTemplate;
+
 
     /**
      * 如果启动批量提交，参数只接收list,AckMode={MANUAL,MANUAL_IMMEDIATE}模式下才能手动提交offset

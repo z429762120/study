@@ -1,10 +1,13 @@
 package com.tool.collect.skytools.service.impl;
 
 import com.tool.collect.skytools.dto.Person;
+import com.tool.collect.skytools.dto.TestLocalDate;
+import com.tool.collect.skytools.mapper1.TestlocaldateMapper;
 import com.tool.collect.skytools.service.TestService;
 import com.tool.collect.skytools.support.model.PropertyFilterInfo;
 import com.tool.collect.skytools.support.utility.JsonUtility;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,6 +20,8 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Transactional
 public class TestServiceImpl implements TestService {
+    @Autowired
+    TestlocaldateMapper testlocaldateMapper;
 
     @Override
     public void multiDataSourceTest(int i) {
@@ -38,6 +43,11 @@ public class TestServiceImpl implements TestService {
         log.info(Thread.currentThread().getName()+"---> 产生6M的数据！！！");
     }
 
+
+    @Override
+    public void testLocalDateMysql(TestLocalDate testlocaldate) {
+        testlocaldateMapper.insert(testlocaldate);
+    }
 
     public static void main(String[] args) {
         Person p = new Person();

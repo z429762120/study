@@ -14,7 +14,7 @@ import java.util.concurrent.Future;
  * @Date 2020/1/15 上午11:35
  **/
 public class ProducerDemo {
-    static final String kafkaServer="47.106.87.193:9092";
+    static final String kafkaServer="192.168.0.241:9093";
     static final String kafkaServer1="192.168.0.241:9092,192.168.0.242:9092,192.168.0.243:9092";
 
     public static void main(String[] args){
@@ -58,7 +58,6 @@ public class ProducerDemo {
                 Future<RecordMetadata> recordMetadataFuture = producer.send(new ProducerRecord<String, String>("ttt", msg));
                 RecordMetadata metadata = recordMetadataFuture.get();
                 System.out.println(String.format("offset=%s,topic=%s,partition=%s",metadata.offset(),metadata.topic(),metadata.partition()));
-                Thread.sleep(200);
             }
         } catch (Exception e) {
             e.printStackTrace();

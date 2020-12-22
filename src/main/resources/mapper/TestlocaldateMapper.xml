@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tool.collect.skytools.mapper1.TestlocaldateMapper">
+
+    <resultMap type="com.tool.collect.skytools.dto.TestLocalDate" id="TestlocaldateMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="time" column="time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="TestlocaldateMap">
+        select
+          id, time
+        from liubo.testLocalDate
+        where id = #{id}
+    </select>
+    
+    <select id="queryByIds" resultMap="TestlocaldateMap">
+        select
+          id, time
+        from liubo.testLocalDate
+        where id in
+        <foreach collection="list" item="item" open="(" close=")" separator=",">
+          #{item}
+        </foreach>     
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="TestlocaldateMap">
+        select
+          id, time
+        from liubo.testLocalDate
+        <where>
+            <if test='id != null'>
+                and id = #{id}
+            </if>
+            <if test='time != null'>
+                and time = #{time}
+            </if>
+        </where>
+    </select>
+
+    <select id="count" resultType="java.lang.Integer">
+        select count(1) from liubo.testLocalDate
+        <where>
+            <if test='id != null'>
+                and id = #{id}
+            </if>
+            <if test='time != null'>
+                and time = #{time}
+            </if>
+        </where>
+    </select>
+
+    <!--新增-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into liubo.testLocalDate(time)
+        values (#{time})
+    </insert>
+
+    <!--批量新增-->
+    <insert id="insertBatch">
+        insert into liubo.testLocalDate(time)
+        values 
+        <foreach collection="list" item="item" separator=",">
+        (#{item.time})
+        </foreach>
+    </insert>
+    
+     <update id="updateNotNull">
+        update liubo.testLocalDate
+        <set>
+              <if test='time != null'>
+                 time = #{time},
+             </if>
+         </set>
+        <where>
+            <if test='id != null'>
+                and id = #{cd.id}
+            </if>
+            <if test='time != null'>
+                and time = #{cd.time}
+            </if>
+        </where>
+        
+    </update>
+
+    <!--修改数据-->
+    <update id="updateNotNullById">
+        update liubo.testLocalDate
+        <set>
+            <if test='time != null'>
+                time = #{time},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <update id="updateById">
+        update liubo.testLocalDate
+        <set>
+           time = #{time},
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from liubo.testLocalDate where id = #{id}
+    </delete>
+
+    <delete id="deleteByIds">
+        delete from liubo.testLocalDate 
+        where id in
+        <foreach collection="list" item="item" open="(" close=")" separator=",">
+          #{item}
+        </foreach> 
+    </delete>
+        
+
+</mapper>

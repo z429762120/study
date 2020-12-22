@@ -51,6 +51,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4.7</version>
+        </dependency>
+        <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
             <version>3.2.0</version>
@@ -221,6 +226,11 @@
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
             <version>${version.spring-mybatis}</version>
+        </dependency>
+        <dependency>
+        <groupId>org.mybatis</groupId>
+        <artifactId>mybatis-typehandlers-jsr310</artifactId>
+        <version>1.0.2</version>
         </dependency>
 
         <!-- Brantch -->

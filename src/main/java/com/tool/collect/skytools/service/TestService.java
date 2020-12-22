@@ -1,5 +1,7 @@
 package com.tool.collect.skytools.service;
 
+import com.tool.collect.skytools.dto.TestLocalDate;
+
 /**
  * @Descriiption
  * @Author bo
@@ -14,4 +16,6 @@ public interface TestService {
 
 
     void testJvm();
+
+    void testLocalDateMysql(TestLocalDate testlocaldate);
 }
