@@ -75,4 +75,21 @@ public class ControllerExceptionHandler {
         return ResponseResultFactory.build(1,errorBuilder.toString());
     }
 
+    private String getThrowType(Exception e) {
+        StackTraceElement[] st = e.getStackTrace();
+        StringBuilder builder = new StringBuilder("Class [");
+        StackTraceElement element = st[0];
+        builder.append(element.getClassName()).append("] Method [").append(element.getMethodName()).append("]");
+        return builder.toString();
+    }
+
+    private Throwable rootCause(Exception ex) {
+        Throwable rootCause = null;
+        Throwable cause = ex.getCause();
+        while (cause != null && cause != rootCause) {
+            rootCause = cause;
+            cause = cause.getCause();
+        }
+        return rootCause == null ? ex : rootCause;
+    }
 }

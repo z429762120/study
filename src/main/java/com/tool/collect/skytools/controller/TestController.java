@@ -1,7 +1,9 @@
 package com.tool.collect.skytools.controller;
 
+import com.tool.collect.skytools.dto.Person;
 import com.tool.collect.skytools.dto.TestLocalDate;
 import com.tool.collect.skytools.service.TestService;
+import com.tool.collect.skytools.support.aop.annotation.AspectInfo;
 import com.tool.collect.skytools.support.aop.annotation.IpIntercept;
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,5 +47,11 @@ public class TestController {
         testService.testLocalDateMysql(testlocaldate);
     }
 
+
+    @AspectInfo(value = "hello")
+    @GetMapping("testAspectInfo")
+    public void testAspectInfo(String name, Person person) {
+        System.out.println("name=" + name + "person=" + person);
+    }
 
 }
