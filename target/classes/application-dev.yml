@@ -2,6 +2,7 @@ mysql:
   datasource:
     test1:
       url: jdbc:mysql://47.106.87.193:3306/liubo?useUnicode=true&characterEncoding=utf-8
+      driver-class-name: com.mysql.jdbc.Driver
       username: "case"
       password: "Lh19890624."
       minPoolSize: 3
@@ -13,14 +14,6 @@ mysql:
       maxIdleTime: 60
 
 appserver:
-  jpa:
-    enabled: false
-    enable-transaction: true
-
-  mybatis:
-    enabled: false
-    mapper-locations: "classpath:mapper/*.xml"
-
   unify:
     binding-result-aspect: true
     app-version-control-aspect: true
@@ -43,10 +36,6 @@ appserver:
         url-map:
           appKey: "1106308466"
           getUserInfo: /user/get_user_info
-
-  shiro:
-    app:
-      enabled: true
 
   autowired:
     id-generator: "192.168.10.150"
