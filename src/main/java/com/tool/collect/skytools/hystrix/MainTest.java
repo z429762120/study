@@ -10,7 +10,13 @@ import java.util.concurrent.TimeUnit;
 public class MainTest {
     public static void main(String[] args) throws Exception {
         //circuitBreakerTest();
-        semaphoreMaxConcurrentTest();
+        //semaphoreMaxConcurrentTest();
+        timeoutTest();
+    }
+
+    public static void timeoutTest() throws Exception {
+        GetProductCommand command = new GetProductCommand(1L);
+        command.execute();
     }
 
     /**
@@ -33,6 +39,9 @@ public class MainTest {
     }
 
 
+    /**
+     * 测试信号量并发限制
+     */
     public static void semaphoreMaxConcurrentTest() {
         //CyclicBarrier barrier = new CyclicBarrier(5);
         for (int i = 0; i < 5; i++) {

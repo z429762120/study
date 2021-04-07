@@ -18,7 +18,7 @@ appserver:
     binding-result-aspect: true
     app-version-control-aspect: true
     exception:
-      enabled: true
+      enabled: false
       unify-log: false
       jsonp: ["callback","jsonp"]
 

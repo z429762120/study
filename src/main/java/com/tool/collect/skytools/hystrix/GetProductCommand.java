@@ -33,7 +33,7 @@ public class GetProductCommand extends HystrixCommand<ProductInfo> {
                         //资源隔离策略 SEMAPHORE（信号量）、THREAD（线程池、默认）
                         //线程池机制，每个 command 运行在一个线程中，限流是通过线程池的大小来控制的；
                         //信号量机制，command 是运行在调用线程中，通过信号量的容量来进行限流，常见于那种基于纯内存的一些业务逻辑服务，而不涉及到任何网络访问请求
-                        .withExecutionIsolationStrategy(HystrixCommandProperties.ExecutionIsolationStrategy.SEMAPHORE)
+                        .withExecutionIsolationStrategy(HystrixCommandProperties.ExecutionIsolationStrategy.THREAD)
                         //使用 SEMAPHORE 隔离策略的时候允许访问的最大并发量，超过这个最大并发量，请求直接被 reject,默认10
                         .withExecutionIsolationSemaphoreMaxConcurrentRequests(3)
                         /** 断路器相关配置 一定时间(默认10s)内通过断路器流量达到20，且异常比例达到50%，之后的5秒钟，所有请求走降级*/
@@ -47,9 +47,9 @@ public class GetProductCommand extends HystrixCommand<ProductInfo> {
                         .withCircuitBreakerSleepWindowInMilliseconds(2000)
                         /**超时的相关设置，如果false则不开启，达到超时时间直接降级，不会管真实逻辑的返回值*/
                         //是否开启超时降级机制，默认开启（true）
-                        //.withExecutionTimeoutEnabled(true)
+                        .withExecutionTimeoutEnabled(true)
                         //开启超时降级机制后，允许的最大超时时间，默认1s
-                        //.withExecutionTimeoutInMilliseconds(1000)
+                        .withExecutionTimeoutInMilliseconds(1000)
 
                 )
         );
@@ -59,12 +59,11 @@ public class GetProductCommand extends HystrixCommand<ProductInfo> {
 
     @Override
     protected ProductInfo run() throws Exception {
-        /*Thread.sleep(1200);
-        return new ProductInfo(1L, "花生");*/
+        Thread.sleep(1200);
         System.out.println("商品productId="+productId);
-       /* if (productId < 30) {
+        if (productId < 30) {
             throw new Exception();
-        }*/
+        }
         final ProductInfo info = new ProductInfo(productId, "花生");
         System.out.println(info);
         return info;
