@@ -6,194 +6,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbc6ea94-a31a-4839-8477-18141b260e9a" name="Default Changelist" comment="临时提交">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/AipgDaiFu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/AipgSms1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/Body.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/InfoReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/Rnpa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/Rnpc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/TransDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/TransSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/GetProductCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/GetProductGroupCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/ProductInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-tools.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/demo/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-test.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/SkytoolsApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/canal/CanalClientTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/demo/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-tools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-tools.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/demo/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/demo/observer/ConcreteObserverA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/demo/observer/ConcreteObserverB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/demo/observer/Demo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/demo/observer/Observer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/demo/observer/Subject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/rabbitmq/RabbitmqConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/rabbitmq/RabbitmqSender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/rabbitmq/listener/QueueAListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/rabbitmq/listener/QueueBListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/AutowiredConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/alipay/AlipayApiException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/alipay/AlipayConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/alipay/AlipayHashMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/alipay/AlipaySignature.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/alipay/RequestParametersHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/async/AsyncAutoConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/async/AsyncAutoProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/async/ExecutorProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/constant/ApiErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/constant/CacheConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/constant/ErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/controller/HttpServletController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/czip/CZIPAddressUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/czip/IPLocation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/czip/IPUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/encrypt/EncryptorRSAUtity$RSA_ALGORITHM.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/encrypt/EncryptorRSAUtity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/encrypt/EncryptorRsaUtility$OPERATION_RSA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/encrypt/EncryptorRsaUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/encrypt/EncryptorUtility$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/encrypt/EncryptorUtility$OPERATION.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/encrypt/EncryptorUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/ConstraintDescriptorImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/EXPF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/ErrorBody.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/TranslationContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/TranslationRegister.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/UnifyExceptionResolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/annotation/ExpTranslation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/annotation/TranslationScan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/extension/ExceptionInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/extension/ServiceExceptionBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/extension/ServiceRollbackException$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/extension/ServiceRollbackException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/extension/ServiceSimpleException$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/extension/ServiceSimpleException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/translation/AbstractExceptionTranslation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/translation/ConstraintViolationExceptionTranslation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/translation/DefaultTranslation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/translation/EmptyResultExceptionTranslation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/translation/ExceptionTranslation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/translation/RepositoryThrowTranslation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/translation/ServiceExceptionTranslation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/exception/translation/SqlExceptionTranslation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/generator/CodeGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/generator/IdGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/CnRange$List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/CnRange.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/Digital$List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/Digital.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/EnumValue$List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/EnumValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/IdCard$List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/IdCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/IntArray$List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/IntArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/IntList$List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/IntList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/MobilePhone$List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/MobilePhone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/MoneyRange$List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/MoneyRange.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/Phone$List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/Phone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/StringByteLength$List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/StringByteLength.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/StringDate$List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/StringDate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/StringJson$List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/StringJson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/Version$List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/annotaion/Version.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/group/AuditValid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/group/CreateValid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/group/QueryValid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/group/UpdateValid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/validator/CnRangeValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/validator/DigitalValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/validator/EnumValueValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/validator/IdCardValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/validator/IntArrayValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/validator/IntListValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/validator/MobilePhoneValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/validator/MoneyRangeValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/validator/PhoneValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/validator/StringBytelengthValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/validator/StringDateValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/validator/StringJsonValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/hibernateExtension/validator/VersionValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/HttpClientConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/HttpClientManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/HttpRequest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/HttpRequest$Type.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/HttpRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/HttpResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/IdelConnectionMonitorThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/SimpleHttpRequestRetryHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/api/annotation/Api.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/api/annotation/ApiScan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/api/config/AbstractApi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/api/config/ApiProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/api/config/ApiRegister.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/config/HttpClientProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/config/HttpManagerConfig$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/config/HttpManagerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/http/config/HttpManagerProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/jacksonExtension/UnifyAnnotationIntrospector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/jacksonExtension/UnifyFilterProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/model/EntityPropertyInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/model/PropertyFilterInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/rateLimit/JoinPointToStringHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/rateLimit/Limiter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/rateLimit/RateLimiterAspect$KeyFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/rateLimit/RateLimiterAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/rateLimit/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/springExtension/Interceptor/AdapterConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/springExtension/ValidationConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/springExtension/resolver/CurrentUserMethodArgumentResolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/springExtension/resolver/RequestModelMethodArgumentResolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/springExtension/resolver/annotation/CurrentUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/springExtension/resolver/annotation/MapWapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/springExtension/resolver/annotation/RequestModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/springExtension/view/MVF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/springExtension/view/UnifyFailureView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/springExtension/view/UnifySuccessView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/springExtension/view/UnifyView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/springExtension/view/UnifyViewMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/BeanValidatorUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/DateUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/DoubleUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/EntityPropertyUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/HostAddressUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/I18nMessageUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/JsonUtility$DoubleSerializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/JsonUtility$FloatSerializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/JsonUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/RandomUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/ReflectionUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/SpringContextUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/StreamUtility$SynchronizedOutputStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/StreamUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/StringUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/ValidatorUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/utility/XmlUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/wechatpay/AESUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/wechatpay/MD5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/wechatpay/MD5Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/support/wechatpay/WechatPaySign.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/qqwry.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shell/shutdown.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shell/start.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sky-tools.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sky-tools.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tool/collect/skytools/JunitTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -341,6 +160,36 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1116634426">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="5" />
+          <entry key="java" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="5" />
+          <entry key="JAVA" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="984" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="984" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="sky-tools" />
@@ -348,91 +197,90 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/net/URLDecoder.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/GetProductCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
+            <state relative-caret-position="357">
+              <caret line="37" column="77" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="77" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="466">
+              <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#circuitBreakerTest#0;class#MainTest#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/net/URLEncoder.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
+            <state relative-caret-position="162">
+              <caret line="304" column="77" selection-start-line="304" selection-start-column="77" selection-end-line="304" selection-end-column="77" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/web/client/DefaultResponseErrorHandler.class">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/hystrix/hystrix-core/1.4.26/hystrix-core-1.4.26.jar!/com/netflix/hystrix/HystrixCommandProperties.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="276">
+              <caret line="238" column="37" selection-start-line="238" selection-start-column="8" selection-end-line="238" selection-end-column="37" />
+              <folding>
+                <element signature="e#10332#10333#0" expanded="true" />
+                <element signature="e#10385#10386#0" expanded="true" />
+                <element signature="e#18038#18039#0" expanded="true" />
+                <element signature="e#18095#18096#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/http/MediaType.class">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/hystrix/hystrix-core/1.4.26/hystrix-core-1.4.26.jar!/com/netflix/hystrix/HystrixCommand.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+            <state relative-caret-position="109">
+              <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/http/HttpHeaders.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2975">
-              <caret line="212" column="43" selection-start-line="212" selection-start-column="43" selection-end-line="212" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/nio/charset/Charset.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3876">
-              <caret line="270" selection-start-line="270" selection-end-line="270" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar!/sun/nio/cs/UTF_8.class">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/reactivex/rxjava/1.2.0/rxjava-1.2.0.jar!/rx/Observer.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="19" column="39" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="39" />
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/spring-core/4.3.8.RELEASE/spring-core-4.3.8.RELEASE.jar!/org/springframework/util/MultiValueMap.class">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/hystrix/hystrix-core/1.4.26/hystrix-core-1.4.26.jar!/com/netflix/hystrix/AbstractCommand.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="158">
+              <caret line="1301" column="38" selection-start-line="1301" selection-start-column="31" selection-end-line="1301" selection-end-column="38" />
+              <folding>
+                <element signature="e#67247#67434#0" expanded="true" />
+                <element signature="e#67433#67434#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/http/HttpEntity.class">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/reactivex/rxjava/1.2.0/rxjava-1.2.0.jar!/rx/observables/BlockingObservable.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="27" column="68" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="68" />
+            <state relative-caret-position="14">
+              <caret line="138" selection-start-line="138" selection-end-line="138" />
+              <folding>
+                <element signature="e#4699#4700#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -453,15 +301,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>retry</find>
-      <find>invoke</find>
-      <find>operation</find>
-      <find>do</find>
-      <find>resolveException</find>
-      <find>initExceptionHandlerAdviceCache</find>
-      <find>exceptionHandlerCache</find>
-      <find>init</find>
-      <find>afterp</find>
       <find>afterPropertiesSet</find>
       <find>handlerExceptionResolvers</find>
       <find>exceptionHandlerAdviceCache</find>
@@ -483,6 +322,15 @@
       <find>rsa</find>
       <find>MAX_ENCRYPT_BLOCK</find>
       <find>token</find>
+      <find>circuitBreakerRequestVolumeThreshold</find>
+      <find>circuitBreakerErrorThresholdPercentage</find>
+      <find>executionTimeoutInMilliseconds</find>
+      <find>executionTimeoutEnabled</find>
+      <find>at com.tool.collect.skytools.hystrix.GetProductCommand.run(GetProductCommand.java:65) 	at com.tool.collect.skytools.hystrix.GetProductCommand.run(GetProductCommand.java:10) 	at com.netflix.hystrix.HystrixCommand$1.call(HystrixCommand.java:294) 	at com.netflix.hystrix.HystrixCommand$1.call(HystrixCommand.java:289) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) 	at rx.Observable.unsafeSubscribe(Observable.java:10151) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) 	at rx.Observable.unsafeSubscribe(Observable.java:10151) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) 	at rx.Observable.unsafeSubscribe(Observable.java:10151) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) 	at rx.Observable.unsafeSubscribe(Observable.java:10151) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) 	at rx.Observable.unsafeSubscribe(Observable.java:10151) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) 	at rx.Observable.unsafeSubscribe(Observable.java:10151) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) 	at rx.Observable.unsafeSubscribe(Observable.java:10151) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) 	at rx.Observable.unsafeSubscribe(Observable.java:10151) 	at com.netflix.hystrix.AbstractCommand$1.call(AbstractCommand.java:384) 	at com.netflix.hystrix.AbstractCommand$1.call(AbstractCommand.java:363) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) 	at rx.Observable.unsafeSubscribe(Observable.java:10151) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) 	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) 	at rx.Observable.unsafeSubscribe(Observable.java:10151) 	at com.netflix.hystrix.AbstractCommand$ObservableCommand$1.call(AbstractCommand.java:1138) 	at com.netflix.hystrix.AbstractCommand$ObservableCommand$1.call(AbstractCommand.java:1134) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) 	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) 	at rx.Observable.subscribe(Observable.java:10247) 	at rx.Observable.subscribe(Observable.java:10214) 	at rx.internal.operators.BlockingOperatorToFuture.toFuture(BlockingOperatorToFuture.java:51) 	at rx.observables.BlockingObservable.toFuture(BlockingObservable.java:411) 	at com.netflix.hystrix.HystrixCommand.queue(HystrixCommand.java:379) 	at com.netflix.hystrix.HystrixCommand.execute(HystrixCommand.java:335) 	at com.tool.collect.skytools.hystrix.MainTest.circuitBreakerTest(MainTest.java:21) 	at com.tool.collect.skytools.hystrix.MainTest.main(MainTest.java:10)</find>
+      <find>circuitBreakerSleepWindowInMilliseconds</find>
+      <find>onError</find>
+      <find>circuitBreakerEnabled</find>
+      <find>default_circuitBreakerEnabled</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -495,8 +343,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/feign/FeignTestController.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e9f211ba-8260-42b9-9ab4-ca833d1a5b15/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/demo/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/mybatis/entity/Person.java" />
         <option value="$PROJECT_DIR$/.idea/EasyCodeConfig/test1-person.json" />
@@ -546,6 +392,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/aop/annotation/AspectInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/aop/MethodInfoAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/demo/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/GetProductCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/MainTest.java" />
       </list>
     </option>
   </component>
@@ -644,19 +492,50 @@
         <subPane>
           <expand>
             <path>
-              <item name="sky-tools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sky-tools" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sky-tools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sky-tools" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sky-tools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sky-tools" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="skytools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="skytools" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -691,6 +570,7 @@
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="oudtdated.runtime.suppressed.plugin.version" value="1.2.51-release-IJ2018.2-1" />
@@ -708,11 +588,11 @@
       <recent name="com.tool.collect.skytools.mybatis.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix" />
       <recent name="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/redis" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/async" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -994,13 +874,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test (1)">
-    <configuration name="MybatisConfig1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tool.collect.skytools.mybatis.MybatisConfig1" />
+  <component name="RunManager" selected="Application.MainTest">
+    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tool.collect.skytools.hystrix.MainTest" />
       <module name="sky-tools" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tool.collect.skytools.mybatis.*" />
+          <option name="PATTERN" value="com.tool.collect.skytools.hystrix.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1008,12 +888,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MysqlTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tool.collect.skytools.test.MysqlTest" />
+    <configuration name="MybatisConfig1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tool.collect.skytools.mybatis.MybatisConfig1" />
       <module name="sky-tools" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tool.collect.skytools.test.*" />
+          <option name="PATTERN" value="com.tool.collect.skytools.mybatis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1093,19 +973,19 @@
     <list>
       <item itemvalue="Remote.远程调试" />
       <item itemvalue="Spring Boot.SkytoolsApplication" />
-      <item itemvalue="Application.MysqlTest" />
       <item itemvalue="Application.TestController" />
       <item itemvalue="Application.MybatisConfig1" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.Test (1)" />
+      <item itemvalue="Application.MainTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainTest" />
         <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.MybatisConfig1" />
         <item itemvalue="Application.TestController" />
-        <item itemvalue="Application.MysqlTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1158,8 +1038,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5057325" visible="true" weight="0.1988555" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5057325" visible="true" weight="0.2353362" />
       <window_info id="Structure" order="1" sideWeight="0.49426752" side_tool="true" weight="0.16094421" />
       <window_info id="Web" order="2" sideWeight="0.49426752" side_tool="true" weight="0.16094421" />
       <window_info id="Designer" order="3" />
@@ -1167,18 +1048,18 @@
       <window_info id="JRebel" order="5" sideWeight="0.49426752" side_tool="true" weight="0.16094421" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.16942675" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34267515" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.23184714" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21146497" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.31719744" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
       <window_info anchor="bottom" id="Tail" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3821656" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.32960895" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.38853502" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" weight="0.2764331" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.21656051" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3745223" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="bottom" id="JRebel Executor" order="15" />
       <window_info anchor="bottom" id="JRebel Console" order="16" sideWeight="0.5007153" side_tool="true" weight="0.24581006" />
@@ -1189,6 +1070,7 @@
       <window_info anchor="bottom" id="JProfiler" order="21" />
       <window_info anchor="bottom" id="MyBatis Log" order="22" />
       <window_info anchor="bottom" id="SonarLint" order="23" />
+      <window_info anchor="right" id="Mybatis datasource" show_stripe_button="false" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.28939828" />
@@ -1336,70 +1218,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/java/mvnRepository/com/thoughtworks/xstream/xstream/1.4.14/xstream-1.4.14-sources.jar!/com/thoughtworks/xstream/annotations/XStreamAlias.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/com/thoughtworks/xstream/xstream/1.4.14/xstream-1.4.14-sources.jar!/com/thoughtworks/xstream/XStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33694">
-          <caret line="2203" column="19" selection-start-line="2203" selection-start-column="19" selection-end-line="2203" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/com/thoughtworks/xstream/xstream/1.4.14/xstream-1.4.14-sources.jar!/com/thoughtworks/xstream/mapper/AnnotationConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/com/thoughtworks/xstream/xstream/1.4.14/xstream-1.4.14-sources.jar!/com/thoughtworks/xstream/mapper/AnnotationMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="154" column="16" selection-start-line="154" selection-start-column="16" selection-end-line="154" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/com/thoughtworks/xstream/xstream/1.4.14/xstream-1.4.14-sources.jar!/com/thoughtworks/xstream/io/HierarchicalStreamDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/com/thoughtworks/xstream/xstream/1.4.14/xstream-1.4.14-sources.jar!/com/thoughtworks/xstream/io/xml/Dom4JDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/com/thoughtworks/xstream/xstream/1.4.14/xstream-1.4.14-sources.jar!/com/thoughtworks/xstream/io/xml/JDom2Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="49" column="36" selection-start-line="49" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/utility/XmlUtility.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1411">
@@ -1589,13 +1407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/controller/SpEL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1620,7 +1431,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/demo/Test.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/net/URLDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
+        <state relative-caret-position="1428">
           <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
         </state>
       </provider>
@@ -1684,7 +1495,90 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/ProductInfo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/reactivex/rxjava/1.2.0/rxjava-1.2.0.jar!/rx/observables/BlockingObservable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
+          <folding>
+            <element signature="e#4699#4700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/reactivex/rxjava/1.2.0/rxjava-1.2.0.jar!/rx/Observer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/hystrix/hystrix-core/1.4.26/hystrix-core-1.4.26.jar!/com/netflix/hystrix/AbstractCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="1301" column="38" selection-start-line="1301" selection-start-column="31" selection-end-line="1301" selection-end-column="38" />
+          <folding>
+            <element signature="e#67247#67434#0" expanded="true" />
+            <element signature="e#67433#67434#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/hystrix/hystrix-core/1.4.26/hystrix-core-1.4.26.jar!/com/netflix/hystrix/HystrixCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/hystrix/hystrix-core/1.4.26/hystrix-core-1.4.26.jar!/com/netflix/hystrix/HystrixCommandProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="238" column="37" selection-start-line="238" selection-start-column="8" selection-end-line="238" selection-end-column="37" />
+          <folding>
+            <element signature="e#10332#10333#0" expanded="true" />
+            <element signature="e#10385#10386#0" expanded="true" />
+            <element signature="e#18038#18039#0" expanded="true" />
+            <element signature="e#18095#18096#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="304" column="77" selection-start-line="304" selection-start-column="77" selection-end-line="304" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/GetProductCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="37" column="77" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#circuitBreakerTest#0;class#MainTest#0" />
+          </folding>
         </state>
       </provider>
     </entry>
