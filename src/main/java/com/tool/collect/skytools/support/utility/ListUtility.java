@@ -4,6 +4,7 @@ import lombok.experimental.UtilityClass;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * @Descriiption
@@ -66,4 +67,41 @@ public class ListUtility {
         }
         return resultList;
     }
+
+    /**
+     * 将一个数随机拆分成n个数
+     * @param totalNum
+     * @param count
+     * @return
+     */
+    public static List<Integer> random(int totalNum, int count) {
+// 创建一个长度的红包数组
+        List redList = new ArrayList<>();
+//2. 进行随机分配
+        Random rand = new Random();
+        int leftMoney = totalNum; // 剩余金额
+        int leftCount = count; // 剩余份数
+// 随机分配公式：1 + rand.nextInt(leftMoney / leftCount * 2);
+        for (int i = 0; i < count - 1; i++) {
+            int money_ = 0;
+            if (leftMoney > 0) {
+                if ((leftMoney / leftCount * 2) < 1) {
+                    money_ = leftMoney;
+                } else {
+                    money_ = 1 + rand.nextInt(leftMoney / leftCount * 2);
+                }
+            } else {
+                money_ = 0;
+            }
+            redList.add(money_);
+            if (money_ > 0) {
+                leftMoney -= money_;
+                leftCount--;
+            }
+        }
+// 把剩余的最后一个放到最后一个包里
+        redList.add(leftMoney);
+        return redList;
+    }
+
 }
