@@ -5,14 +5,17 @@
     <bookmark url="jar://$USER_HOME$/java/mvnRepository/io/github/openfeign/feign-core/9.5.0/feign-core-9.5.0-sources.jar!/feign/Feign.java" description="public abstract &lt;T&gt; T newInstance(Target&lt;T&gt; target..." line="92" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc6ea94-a31a-4839-8477-18141b260e9a" name="Default Changelist" comment="临时提交">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/GetProductCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/GetProductGroupCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/ProductInfo.java" afterDir="false" />
+    <list default="true" id="dbc6ea94-a31a-4839-8477-18141b260e9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/controller/StackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/ClientServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/DemoClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/DemoServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/DemoServerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sky-tools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-tools.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tool/collect/skytools/demo/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/demo/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/demo/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,6 +28,11 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/study$HystrixTest_circuitBreakerTest.ic" NAME="HystrixTest.circuitBreakerTest Coverage Results" MODIFIED="1617791326186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.tool.collect.skytools.*</FILTER>
+    </SUITE>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -163,30 +171,46 @@
     <session id="1116634426">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.4" value="3" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="5" />
-          <entry key="java" value="5" />
+          <entry key="class" value="38" />
+          <entry key="gitignore" value="1" />
+          <entry key="java" value="49" />
+          <entry key="properties" value="1" />
+          <entry key="xml" value="1" />
+          <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="5" />
-          <entry key="JAVA" value="5" />
+          <entry key="CLASS" value="38" />
+          <entry key="Git file" value="1" />
+          <entry key="JAVA" value="49" />
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="1" />
+          <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="984" />
+          <entry key="java" value="2435" />
+          <entry key="xml" value="1" />
+          <entry key="yml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="984" />
+          <entry key="JAVA" value="2435" />
+          <entry key="XML" value="1" />
+          <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -197,90 +221,274 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/GetProductCommand.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="37" column="77" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="77" />
+            <state relative-caret-position="1054">
+              <caret line="62" column="55" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/DemoServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/socket/nio/NioServerSocketChannel.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/bootstrap/ServerBootstrap.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/EventLoopGroup.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/ClientServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/ChannelPipeline.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/DefaultChannelPipeline.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="50" column="66" selection-start-line="50" selection-start-column="66" selection-end-line="50" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/DemoClientHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/MainTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/utility/DateUtility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+            <state relative-caret-position="393">
+              <caret line="427" lean-forward="true" selection-start-line="427" selection-end-line="427" />
+              <folding>
+                <element signature="docComment;class#DateUtility#0" />
+                <element signature="e#549#1006#0" />
+                <element signature="e#1012#1200#0" />
+                <element signature="e#1012#1747#0" />
+                <element signature="e#1753#1949#0" />
+                <element signature="e#1753#2366#0" />
+                <element signature="e#2372#2467#0" />
+                <element signature="e#2372#2862#0" />
+                <element signature="e#2868#2953#0" />
+                <element signature="e#2868#3353#0" />
+                <element signature="e#3359#3754#0" />
+                <element signature="e#3760#3860#0" />
+                <element signature="e#3983#4077#0" />
+                <element signature="e#4212#4306#0" />
+                <element signature="e#4441#4547#0" />
+                <element signature="e#4680#4783#0" />
+                <element signature="e#4911#5020#0" />
+                <element signature="e#5158#5262#0" />
+                <element signature="e#5158#5405#0" />
+                <element signature="e#5411#5500#0" />
+                <element signature="e#5637#5767#0" />
+                <element signature="e#5637#5902#0" />
+                <element signature="e#5908#6044#0" />
+                <element signature="e#5908#6189#0" />
+                <element signature="e#6195#6334#0" />
+                <element signature="e#6195#6484#0" />
+                <element signature="e#6490#7183#0" />
+                <element signature="e#7189#7493#0" />
+                <element signature="e#7499#7777#0" />
+                <element signature="e#7783#7841#0" />
+                <element signature="e#7783#8025#0" />
+                <element signature="e#8031#8089#0" />
+                <element signature="e#8031#8269#0" />
+                <element signature="e#8275#8345#0" />
+                <element signature="e#8275#8694#0" />
+                <element signature="e#8700#8825#0" />
+                <element signature="e#8700#9252#0" />
+                <element signature="e#9258#9332#0" />
+                <element signature="e#9258#9507#0" />
+                <element signature="e#9513#9588#0" />
+                <element signature="e#9513#9945#0" />
+                <element signature="e#9951#10077#0" />
+                <element signature="e#9951#10583#0" />
+                <element signature="e#10589#10696#0" />
+                <element signature="e#10589#10932#0" />
+                <element signature="e#10938#11043#0" />
+                <element signature="e#10938#11271#0" />
+                <element signature="e#11277#11558#0" />
+                <element signature="e#11564#11850#0" />
+                <element signature="e#11856#12133#0" />
+                <element signature="e#12139#12332#0" />
+                <element signature="e#12435#12529#0" />
+                <element signature="e#12435#13292#0" />
+                <element signature="e#13298#13392#0" />
+                <element signature="e#13298#14151#0" />
+                <element signature="e#14157#14282#0" />
+                <element signature="e#14157#14726#0" />
+                <element signature="e#14732#14813#0" />
+                <element signature="e#14732#15040#0" />
+                <element signature="e#15046#15102#0" />
+                <element signature="e#15046#15459#0" />
+                <element signature="e#15465#15641#0" />
+                <element signature="e#15647#15696#0" />
+                <element signature="e#15647#16109#0" />
+                <element signature="e#16115#16165#0" />
+                <element signature="e#16115#16431#0" />
+                <element signature="e#16437#16687#0" />
+                <element signature="e#16693#16951#0" />
+                <element signature="e#16957#17170#0" />
+                <element signature="e#17176#17249#0" />
+                <element signature="e#17176#17513#0" />
+                <element signature="e#17519#17764#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/handler/codec/string/StringEncoder.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/buffer/ByteBufUtil.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6749">
+              <caret line="438" column="22" selection-start-line="438" selection-start-column="22" selection-end-line="438" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/handler/codec/MessageToMessageEncoder.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/DemoServerHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#circuitBreakerTest#0;class#MainTest#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/ChannelInboundHandlerAdapter.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="304" column="77" selection-start-line="304" selection-start-column="77" selection-end-line="304" selection-end-column="77" />
+            <state relative-caret-position="272">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/hystrix/hystrix-core/1.4.26/hystrix-core-1.4.26.jar!/com/netflix/hystrix/HystrixCommandProperties.class">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/ChannelHandlerContext.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="238" column="37" selection-start-line="238" selection-start-column="8" selection-end-line="238" selection-end-column="37" />
-              <folding>
-                <element signature="e#10332#10333#0" expanded="true" />
-                <element signature="e#10385#10386#0" expanded="true" />
-                <element signature="e#18038#18039#0" expanded="true" />
-                <element signature="e#18095#18096#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/hystrix/hystrix-core/1.4.26/hystrix-core-1.4.26.jar!/com/netflix/hystrix/HystrixCommand.class">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+            <state relative-caret-position="102">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/java/mvnRepository/io/reactivex/rxjava/1.2.0/rxjava-1.2.0.jar!/rx/Observer.class">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/handler/codec/string/StringDecoder.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/handler/codec/MessageToMessageDecoder.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/ChannelInitializer.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="16" />
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/hystrix/hystrix-core/1.4.26/hystrix-core-1.4.26.jar!/com/netflix/hystrix/AbstractCommand.class">
+        <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/Channel.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="1301" column="38" selection-start-line="1301" selection-start-column="31" selection-end-line="1301" selection-end-column="38" />
-              <folding>
-                <element signature="e#67247#67434#0" expanded="true" />
-                <element signature="e#67433#67434#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/java/mvnRepository/io/reactivex/rxjava/1.2.0/rxjava-1.2.0.jar!/rx/observables/BlockingObservable.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="138" selection-start-line="138" selection-end-line="138" />
-              <folding>
-                <element signature="e#4699#4700#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="629">
+              <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -294,17 +502,13 @@
         <option value="Tag Library Descriptor" />
         <option value="Interface" />
         <option value="HTTP Request" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>afterPropertiesSet</find>
-      <find>handlerExceptionResolvers</find>
-      <find>exceptionHandlerAdviceCache</find>
-      <find>doDispatch</find>
       <find>doResolveHandlerMethodException</find>
       <find>handler</find>
       <find>interceptors</find>
@@ -331,6 +535,10 @@
       <find>onError</find>
       <find>circuitBreakerEnabled</find>
       <find>default_circuitBreakerEnabled</find>
+      <find>notEmpty</find>
+      <find>comparator</find>
+      <find>call</find>
+      <find>zone</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -343,15 +551,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/demo/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/mybatis/entity/Person.java" />
-        <option value="$PROJECT_DIR$/.idea/EasyCodeConfig/test1-person.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/PersonMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/mybatis/dao/BaseMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/mybatis/mapper/BaseMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/mybatis/MybatisTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/mybatis/dao/PersonMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/dto/Person.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/controller/SpEL.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/leetcode/BinaryTreePaths.java" />
@@ -368,14 +567,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/TestlocaldateMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/SkytoolsApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/mybatis/DBConfig1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/dto/TestLocalDate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/dto/Item.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/dto/delivery.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/dto/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/mybatis/MybatisConfig1.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/Rnpa.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/AipgSms1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/Rnpc.java" />
@@ -392,8 +589,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/aop/annotation/AspectInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/aop/MethodInfoAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/demo/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/GetProductCommand.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tool/collect/skytools/HystrixTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/MainTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/GetProductCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/utility/ListUtility.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/demo/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/controller/StackTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/DemoServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/DemoClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/ClientServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/DemoServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/utility/DateUtility.java" />
       </list>
     </option>
   </component>
@@ -472,22 +680,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="sky-tools" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="sky-tools" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="sky-tools" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="sky-tools" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -528,19 +720,28 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="skytools" type="462c0819:PsiDirectoryNode" />
-              <item name="hystrix" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
         <option name="show-excluded-files" value="false" />
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="sky-tools" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="sky-tools" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="sky-tools" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="sky-tools" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
       </pane>
       <pane id="PackagesPane">
         <subPane>
@@ -565,7 +766,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="kafka&#9;PSI&#9;JAVA://com.tool.collect.skytools.kafka.MyKafkaConsumerListenner&#10;date&#9;PSI&#9;JAVA://com.tool.collect.skytools.support.utility.DateUtility&#10;list&#9;FILE&#9;file:///Users/bo/javaProject/test-alita/sky-tools/src/main/java/com/tool/collect/skytools/support/utility/ListUtility.java&#10;appli&#9;FILE&#9;file:///Users/bo/javaProject/test-alita/sky-tools/src/main/resources/application.yml&#10;dateU&#9;PSI&#9;JAVA://com.tool.collect.skytools.support.utility.DateUtility&#10;mybatis&#9;PSI&#9;JAVA://com.tool.collect.skytools.mybatis.MybatisConfig1&#10;ExceptionHandlerExceptionResolver&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.java&#10;DispatcherServlet&#9;PSI&#9;JAVA://org.springframework.web.servlet.DispatcherServlet&#10;applica&#9;FILE&#9;file:///Users/bo/javaProject/test-alita/sky-tools/src/main/resources/application.yml&#10;syncmeth&#9;PSI&#9;JAVA://feign.SynchronousMethodHandler&#10;FeignAutoConfiguration&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignAutoConfiguration.java&#10;feignclientc&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignClientsConfiguration.java&#10;feignfac&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignClientFactoryBean.java&#10;reflectivefei&#9;PSI&#9;JAVA://feign.ReflectiveFeign&#10;sync&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/io/github/openfeign/feign-core/9.5.0/feign-core-9.5.0-sources.jar!/feign/SynchronousMethodHandler.java&#10;loadbalanceconfi&#9;PSI&#9;JAVA://org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration&#10;loadcon&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/ribbon/HttpClientFeignLoadBalancedConfiguration.java&#10;load&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/ribbon/LoadBalancerFeignClient.java&#10;feign&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignAutoConfiguration.java&#10;fa&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignClientFactoryBean.java&#10;syncme&#9;PSI&#9;JAVA://feign.SynchronousMethodHandler&#10;feignclient&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/ribbon/FeignRibbonClientAutoConfiguration.java&#10;feignauto&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignAutoConfiguration.java&#10;FEIGNCLIENT&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/support/FeignHttpClientProperties.java&#10;OPTIONS&#9;PSI&#9;JAVA://com.netflix.client.http.HttpRequest.Verb#OPTIONS&#10;FeignRibbonClientAutoConfiguration&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/ribbon/FeignRibbonClientAutoConfiguration.java&#10;ReflectiveFeign&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/io/github/openfeign/feign-core/9.5.0/feign-core-9.5.0-sources.jar!/feign/ReflectiveFeign.java&#10;xxl&#9;PSI&#9;JAVA://com.tool.collect.skytools.xxljob.XxlJobConfig&#10;reflec&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/io/github/openfeign/feign-core/9.5.0/feign-core-9.5.0-sources.jar!/feign/ReflectiveFeign.java&#10;demo&#9;FILE&#9;file:///Users/bo/javaProject/test-alita/sky-tools/src/main/java/com/tool/collect/skytools/feign/DemoClientApi.java&#10;sky&#9;PSI&#9;JAVA://com.tool.collect.skytools.SkytoolsApplication&#10;TxNamespaceHandler&#9;PSI&#9;JAVA://org.springframework.transaction.config.TxNamespaceHandler&#10;requestbodyp&#9;PSI&#9;JAVA://org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor&#10;web&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurationSupport.class&#10;feignclientfac&#9;PSI&#9;JAVA://org.springframework.cloud.netflix.feign.FeignClientFactoryBean&#10;FeignClientsConfiguration&#9;PSI&#9;JAVA://org.springframework.cloud.netflix.feign.FeignClientsConfiguration&#10;WebMvcConfigurationSupport&#9;PSI&#9;JAVA://org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport&#10;feignclientfa&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignClientFactoryBean.java&#10;ribbon&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/ribbon/FeignRibbonClientAutoConfiguration.java&#10;feignau&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignAutoConfiguration.java&#10;SynchronousMethodHandler&#9;PSI&#9;JAVA://feign.SynchronousMethodHandler&#10;feignclientcon&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignClientsConfiguration.java&#10;feignbala&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/ribbon/DefaultFeignLoadBalancedConfiguration.java&#10;feignautoc&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignAutoConfiguration.java&#10;feignclients&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignClientsConfiguration.java&#10;feigncontext&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignContext.java&#10;beanpostprocess&#9;PSI&#9;JAVA://org.springframework.beans.factory.config.BeanPostProcessor&#10;auto&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignAutoConfiguration.java&#10;feignAutocon&#9;PSI&#9;JAVA://org.springframework.cloud.netflix.feign.FeignAutoConfiguration&#10;democl&#9;FILE&#9;file:///Users/bo/javaProject/test-alita/sky-tools/src/main/java/com/tool/collect/skytools/feign/DemoClientApi.java" />
+    <property name="SearchEverywhereHistoryKey" value="date&#9;PSI&#9;JAVA://com.tool.collect.skytools.support.utility.DateUtility&#10;syncm&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/io/github/openfeign/feign-core/9.5.0/feign-core-9.5.0.jar!/feign/SynchronousMethodHandler.class&#10;kafka&#9;PSI&#9;JAVA://com.tool.collect.skytools.kafka.MyKafkaConsumerListenner&#10;list&#9;FILE&#9;file:///Users/bo/javaProject/test-alita/sky-tools/src/main/java/com/tool/collect/skytools/support/utility/ListUtility.java&#10;appli&#9;FILE&#9;file:///Users/bo/javaProject/test-alita/sky-tools/src/main/resources/application.yml&#10;dateU&#9;PSI&#9;JAVA://com.tool.collect.skytools.support.utility.DateUtility&#10;mybatis&#9;PSI&#9;JAVA://com.tool.collect.skytools.mybatis.MybatisConfig1&#10;ExceptionHandlerExceptionResolver&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.java&#10;DispatcherServlet&#9;PSI&#9;JAVA://org.springframework.web.servlet.DispatcherServlet&#10;applica&#9;FILE&#9;file:///Users/bo/javaProject/test-alita/sky-tools/src/main/resources/application.yml&#10;syncmeth&#9;PSI&#9;JAVA://feign.SynchronousMethodHandler&#10;FeignAutoConfiguration&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignAutoConfiguration.java&#10;feignclientc&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignClientsConfiguration.java&#10;feignfac&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignClientFactoryBean.java&#10;reflectivefei&#9;PSI&#9;JAVA://feign.ReflectiveFeign&#10;sync&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/io/github/openfeign/feign-core/9.5.0/feign-core-9.5.0-sources.jar!/feign/SynchronousMethodHandler.java&#10;loadbalanceconfi&#9;PSI&#9;JAVA://org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration&#10;loadcon&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/ribbon/HttpClientFeignLoadBalancedConfiguration.java&#10;load&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/ribbon/LoadBalancerFeignClient.java&#10;feign&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignAutoConfiguration.java&#10;fa&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignClientFactoryBean.java&#10;syncme&#9;PSI&#9;JAVA://feign.SynchronousMethodHandler&#10;feignclient&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/ribbon/FeignRibbonClientAutoConfiguration.java&#10;feignauto&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignAutoConfiguration.java&#10;FEIGNCLIENT&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/support/FeignHttpClientProperties.java&#10;OPTIONS&#9;PSI&#9;JAVA://com.netflix.client.http.HttpRequest.Verb#OPTIONS&#10;FeignRibbonClientAutoConfiguration&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/ribbon/FeignRibbonClientAutoConfiguration.java&#10;ReflectiveFeign&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/io/github/openfeign/feign-core/9.5.0/feign-core-9.5.0-sources.jar!/feign/ReflectiveFeign.java&#10;xxl&#9;PSI&#9;JAVA://com.tool.collect.skytools.xxljob.XxlJobConfig&#10;reflec&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/io/github/openfeign/feign-core/9.5.0/feign-core-9.5.0-sources.jar!/feign/ReflectiveFeign.java&#10;demo&#9;FILE&#9;file:///Users/bo/javaProject/test-alita/sky-tools/src/main/java/com/tool/collect/skytools/feign/DemoClientApi.java&#10;sky&#9;PSI&#9;JAVA://com.tool.collect.skytools.SkytoolsApplication&#10;TxNamespaceHandler&#9;PSI&#9;JAVA://org.springframework.transaction.config.TxNamespaceHandler&#10;requestbodyp&#9;PSI&#9;JAVA://org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor&#10;web&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurationSupport.class&#10;feignclientfac&#9;PSI&#9;JAVA://org.springframework.cloud.netflix.feign.FeignClientFactoryBean&#10;FeignClientsConfiguration&#9;PSI&#9;JAVA://org.springframework.cloud.netflix.feign.FeignClientsConfiguration&#10;WebMvcConfigurationSupport&#9;PSI&#9;JAVA://org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport&#10;feignclientfa&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignClientFactoryBean.java&#10;ribbon&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/ribbon/FeignRibbonClientAutoConfiguration.java&#10;feignau&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignAutoConfiguration.java&#10;SynchronousMethodHandler&#9;PSI&#9;JAVA://feign.SynchronousMethodHandler&#10;feignclientcon&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignClientsConfiguration.java&#10;feignbala&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/ribbon/DefaultFeignLoadBalancedConfiguration.java&#10;feignautoc&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignAutoConfiguration.java&#10;feignclients&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignClientsConfiguration.java&#10;feigncontext&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignContext.java&#10;beanpostprocess&#9;PSI&#9;JAVA://org.springframework.beans.factory.config.BeanPostProcessor&#10;auto&#9;FILE&#9;jar:///Users/bo/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/FeignAutoConfiguration.java&#10;feignAutocon&#9;PSI&#9;JAVA://org.springframework.cloud.netflix.feign.FeignAutoConfiguration" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -581,11 +782,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tool.collect.skytools.netty" />
+      <recent name="com.tool.collect.skytools" />
       <recent name="com.tool.collect.skytools.support.aop" />
       <recent name="com.tool.collect.skytools.support.utility" />
       <recent name="com.tool.collect.skytools.xmlparser" />
-      <recent name="com.tool.collect.skytools.mybatis.mapper" />
-      <recent name="com.tool.collect.skytools.mybatis.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix" />
@@ -874,7 +1075,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainTest">
+  <component name="RunManager" selected="Application.ClientServer">
+    <configuration name="ClientServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tool.collect.skytools.netty.ClientServer" />
+      <module name="sky-tools" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tool.collect.skytools.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tool.collect.skytools.netty.DemoServer" />
+      <module name="sky-tools" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tool.collect.skytools.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tool.collect.skytools.hystrix.MainTest" />
       <module name="sky-tools" />
@@ -888,21 +1115,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisConfig1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tool.collect.skytools.mybatis.MybatisConfig1" />
-      <module name="sky-tools" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tool.collect.skytools.mybatis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tool.collect.skytools.demo.Test" />
+    <configuration name="Person" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tool.collect.skytools.demo.Person" />
       <module name="sky-tools" />
       <extension name="coverage">
         <pattern>
@@ -914,21 +1128,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tool.collect.skytools.xmlparser.Test" />
-      <module name="sky-tools" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tool.collect.skytools.xmlparser.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tool.collect.skytools.controller.TestController" />
+    <configuration name="StackTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tool.collect.skytools.controller.StackTest" />
       <module name="sky-tools" />
       <extension name="coverage">
         <pattern>
@@ -973,19 +1174,19 @@
     <list>
       <item itemvalue="Remote.远程调试" />
       <item itemvalue="Spring Boot.SkytoolsApplication" />
-      <item itemvalue="Application.TestController" />
-      <item itemvalue="Application.MybatisConfig1" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.Test (1)" />
       <item itemvalue="Application.MainTest" />
+      <item itemvalue="Application.Person" />
+      <item itemvalue="Application.StackTest" />
+      <item itemvalue="Application.DemoServer" />
+      <item itemvalue="Application.ClientServer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClientServer" />
+        <item itemvalue="Application.DemoServer" />
+        <item itemvalue="Application.StackTest" />
+        <item itemvalue="Application.Person" />
         <item itemvalue="Application.MainTest" />
-        <item itemvalue="Application.Test (1)" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.MybatisConfig1" />
-        <item itemvalue="Application.TestController" />
       </list>
     </recent_temporary>
   </component>
@@ -996,24 +1197,6 @@
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TestHistory">
-    <history-entry file="KafkaTest_test - 2020.01.17 at 15h 19m 05s.xml">
-      <configuration name="KafkaTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KafkaTest_test2 - 2020.01.17 at 15h 36m 40s.xml">
-      <configuration name="KafkaTest.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KafkaTest_test2 - 2020.01.17 at 15h 44m 43s.xml">
-      <configuration name="KafkaTest.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KafkaTest_test1 - 2020.01.17 at 15h 45m 03s.xml">
-      <configuration name="KafkaTest.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KafkaTest_test2 - 2020.01.17 at 15h 46m 33s.xml">
-      <configuration name="KafkaTest.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KafkaTest_test2 - 2020.01.17 at 17h 48m 59s.xml">
-      <configuration name="KafkaTest.test2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="KafkaTest_test2 - 2020.01.17 at 17h 51m 12s.xml">
       <configuration name="KafkaTest.test2" configurationId="JUnit" />
     </history-entry>
@@ -1025,6 +1208,24 @@
     </history-entry>
     <history-entry file="KafkaTest_test2 - 2020.01.17 at 17h 54m 54s.xml">
       <configuration name="KafkaTest.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HystrixTest_circuitBreakerTest - 2021.04.07 at 18h 26m 53s.xml">
+      <configuration name="HystrixTest.circuitBreakerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HystrixTest_circuitBreakerTest - 2021.04.07 at 18h 27m 31s.xml">
+      <configuration name="HystrixTest.circuitBreakerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HystrixTest_circuitBreakerTest - 2021.04.07 at 18h 28m 52s.xml">
+      <configuration name="HystrixTest.circuitBreakerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HystrixTest_circuitBreakerTest - 2021.04.07 at 18h 29m 16s.xml">
+      <configuration name="HystrixTest.circuitBreakerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HystrixTest_circuitBreakerTest - 2021.04.07 at 18h 30m 09s.xml">
+      <configuration name="HystrixTest.circuitBreakerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HystrixTest_circuitBreakerTest - 2021.04.07 at 18h 31m 30s.xml">
+      <configuration name="HystrixTest.circuitBreakerTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1040,16 +1241,16 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5057325" visible="true" weight="0.2353362" />
-      <window_info id="Structure" order="1" sideWeight="0.49426752" side_tool="true" weight="0.16094421" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50431776" visible="true" weight="0.1874106" />
+      <window_info id="Structure" order="1" sideWeight="0.4965398" side_tool="true" weight="0.26466382" />
       <window_info id="Web" order="2" sideWeight="0.49426752" side_tool="true" weight="0.16094421" />
       <window_info id="Designer" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.49426752" side_tool="true" weight="0.16094421" />
       <window_info id="JRebel" order="5" sideWeight="0.49426752" side_tool="true" weight="0.16094421" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.16942675" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21146497" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.31719744" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18216561" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36305732" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
@@ -1057,7 +1258,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3821656" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.32960895" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" weight="0.2764331" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" weight="0.23439491" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3745223" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
@@ -1070,7 +1271,6 @@
       <window_info anchor="bottom" id="JProfiler" order="21" />
       <window_info anchor="bottom" id="MyBatis Log" order="22" />
       <window_info anchor="bottom" id="SonarLint" order="23" />
-      <window_info anchor="right" id="Mybatis datasource" show_stripe_button="false" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.28939828" />
@@ -1081,6 +1281,8 @@
       <window_info anchor="right" id="aiXcoder" order="7" weight="0.3297568" />
       <window_info anchor="right" id="Json Parser" order="8" weight="0.3297568" />
       <window_info anchor="right" id="RestServices" order="9" weight="0.3297568" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3297568" />
+      <window_info anchor="right" id="Mybatis datasource" order="11" show_stripe_button="false" side_tool="true" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5209497" weight="0.34406295" />
@@ -1218,366 +1420,439 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/utility/XmlUtility.java">
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/github/openfeign/feign-core/9.5.0/feign-core-9.5.0.jar!/feign/SynchronousMethodHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="95" column="63" selection-start-line="95" selection-start-column="53" selection-end-line="95" selection-end-column="63" />
+        <state relative-caret-position="205">
+          <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/utility/XmlUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/utility/XmlUtility1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/rateLimit/Limiter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/rateLimit/JoinPointToStringHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/rateLimit/RateLimiterAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/aop/IpInterceptAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="32" column="70" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/aop/annotation/AspectInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/annotation/ElementType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/spring-aop/4.3.8.RELEASE/spring-aop-4.3.8.RELEASE.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6256">
-          <caret line="424" selection-start-line="424" selection-end-line="424" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/reflect/Parameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3060">
-          <caret line="217" column="20" selection-start-line="217" selection-start-column="20" selection-end-line="217" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/aop/annotation/IpIntercept.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar!/org/aspectj/lang/JoinPoint.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar!/org/aspectj/runtime/reflect/JoinPointImpl.class">
+    <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/ribbon/LoadBalancerFeignClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <caret line="62" column="55" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar!/org/aspectj/lang/Signature.class">
+    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/ribbon/ribbon-loadbalancer/2.2.5/ribbon-loadbalancer-2.2.5.jar!/com/netflix/client/AbstractLoadBalancerAwareClient.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state relative-caret-position="629">
+          <caret line="53" column="88" selection-start-line="53" selection-start-column="88" selection-end-line="53" selection-end-column="88" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/aop/CacheLockAspect.java">
+    <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/feign/ribbon/FeignLoadBalancer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="50" column="56" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
+        <state relative-caret-position="646">
+          <caret line="79" column="49" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/exception/ControllerExceptionHandler.java">
+    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/ribbon/ribbon-core/2.2.5/ribbon-core-2.2.5.jar!/com/netflix/client/ClientRequest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="89" column="30" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
+        <state relative-caret-position="1207">
+          <caret line="85" column="25" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/exception/UnifyExceptionResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/exception/EXPF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/exception/TranslationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/exception/TranslationRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/exception/ErrorBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/AipgDaiFu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/InfoReq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/com/thoughtworks/xstream/xstream/1.4.14/xstream-1.4.14-sources.jar!/com/thoughtworks/xstream/mapper/ClassAliasingMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/aop/MethodInfoAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/xmlparser/Rnpa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/controller/SpEL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/web/client/RestOperations.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/web/client/RestTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="483" column="49" selection-start-line="483" selection-start-column="39" selection-end-line="483" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/demo/Test.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/net/URLDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/net/URLEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/web/client/DefaultResponseErrorHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/http/MediaType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/http/HttpHeaders.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2975">
-          <caret line="212" column="43" selection-start-line="212" selection-start-column="43" selection-end-line="212" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/nio/charset/Charset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3876">
-          <caret line="270" selection-start-line="270" selection-end-line="270" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar!/sun/nio/cs/UTF_8.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/spring-core/4.3.8.RELEASE/spring-core-4.3.8.RELEASE.jar!/org/springframework/util/MultiValueMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/http/HttpEntity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="68" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/ProductInfo.java">
+    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/ribbon/ribbon-transport/2.2.5/ribbon-transport-2.2.5.jar!/com/netflix/ribbon/transport/netty/http/LoadBalancingHttpClient.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/io/reactivex/rxjava/1.2.0/rxjava-1.2.0.jar!/rx/observables/BlockingObservable.class">
+    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/ribbon/ribbon-loadbalancer/2.2.5/ribbon-loadbalancer-2.2.5.jar!/com/netflix/loadbalancer/reactive/ServerOperation.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="138" selection-start-line="138" selection-end-line="138" />
-          <folding>
-            <element signature="e#4699#4700#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/ribbon/ribbon-loadbalancer/2.2.5/ribbon-loadbalancer-2.2.5.jar!/com/netflix/loadbalancer/LoadBalancerContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5678">
+          <caret line="371" column="39" selection-start-line="371" selection-start-column="39" selection-end-line="371" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/ribbon/ribbon-loadbalancer/2.2.5/ribbon-loadbalancer-2.2.5.jar!/com/netflix/loadbalancer/BaseLoadBalancer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9112">
+          <caret line="595" column="18" selection-start-line="595" selection-start-column="18" selection-end-line="595" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/ribbon/ribbon-loadbalancer/2.2.5/ribbon-loadbalancer-2.2.5.jar!/com/netflix/loadbalancer/BestAvailableRule.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/ribbon/ribbon-loadbalancer/2.2.5/ribbon-loadbalancer-2.2.5.jar!/com/netflix/loadbalancer/AbstractLoadBalancerRule.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/ribbon/ribbon-loadbalancer/2.2.5/ribbon-loadbalancer-2.2.5.jar!/com/netflix/loadbalancer/IRule.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/ribbon/ribbon-loadbalancer/2.2.5/ribbon-loadbalancer-2.2.5.jar!/com/netflix/loadbalancer/Server.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/ribbon/support/AbstractLoadBalancingClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="157" column="28" selection-start-line="157" selection-start-column="28" selection-end-line="157" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/ribbon/ribbon-loadbalancer/2.2.5/ribbon-loadbalancer-2.2.5.jar!/com/netflix/loadbalancer/reactive/LoadBalancerCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="88" column="43" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/java/mvnRepository/io/reactivex/rxjava/1.2.0/rxjava-1.2.0.jar!/rx/Observer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="85">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/hystrix/hystrix-core/1.4.26/hystrix-core-1.4.26.jar!/com/netflix/hystrix/AbstractCommand.class">
+    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/ribbon/ribbon-core/2.2.5/ribbon-core-2.2.5.jar!/com/netflix/client/RetryHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="1301" column="38" selection-start-line="1301" selection-start-column="31" selection-end-line="1301" selection-end-column="38" />
-          <folding>
-            <element signature="e#67247#67434#0" expanded="true" />
-            <element signature="e#67433#67434#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/hystrix/hystrix-core/1.4.26/hystrix-core-1.4.26.jar!/com/netflix/hystrix/HystrixCommand.class">
+    <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/ribbon/apache/RibbonLoadBalancingHttpClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+        <state relative-caret-position="867">
+          <caret line="81" column="60" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/java/mvnRepository/com/netflix/hystrix/hystrix-core/1.4.26/hystrix-core-1.4.26.jar!/com/netflix/hystrix/HystrixCommandProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="238" column="37" selection-start-line="238" selection-start-column="8" selection-end-line="238" selection-end-column="37" />
-          <folding>
-            <element signature="e#10332#10333#0" expanded="true" />
-            <element signature="e#10385#10386#0" expanded="true" />
-            <element signature="e#18038#18039#0" expanded="true" />
-            <element signature="e#18095#18096#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="304" column="77" selection-start-line="304" selection-start-column="77" selection-end-line="304" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/GetProductCommand.java">
+    <entry file="jar://$USER_HOME$/java/mvnRepository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar!/org/apache/http/impl/client/CloseableHttpClient.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="37" column="77" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="77" />
+          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/hystrix/MainTest.java">
+    <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/ribbon/RibbonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+        <state relative-caret-position="1037">
+          <caret line="70" column="112" selection-start-line="70" selection-start-column="94" selection-end-line="70" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/org/springframework/cloud/spring-cloud-netflix-core/1.4.7.RELEASE/spring-cloud-netflix-core-1.4.7.RELEASE-sources.jar!/org/springframework/cloud/netflix/ribbon/SpringClientFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7514">
+          <caret line="499" column="26" selection-start-line="499" selection-start-column="26" selection-end-line="499" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30056">
+          <caret line="1829" column="17" selection-start-line="1829" selection-start-column="17" selection-end-line="1829" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5746">
+          <caret line="372" column="12" selection-start-line="372" selection-start-column="12" selection-end-line="372" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31705">
+          <caret line="1926" column="29" selection-start-line="1926" selection-start-column="29" selection-end-line="1926" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/com/sun/org/apache/xalan/internal/xsltc/compiler/util/StringStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="137" column="37" selection-start-line="137" selection-start-column="37" selection-end-line="137" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/github/openfeign/feign-core/9.5.0/feign-core-9.5.0-sources.jar!/feign/SynchronousMethodHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/controller/StackTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="55" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/DemoServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#circuitBreakerTest#0;class#MainTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/socket/nio/NioServerSocketChannel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/bootstrap/ServerBootstrap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/EventLoopGroup.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/ClientServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/ChannelPipeline.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/DefaultChannelPipeline.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="50" column="66" selection-start-line="50" selection-start-column="66" selection-end-line="50" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/DemoClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/handler/codec/string/StringEncoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/buffer/ByteBufUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6749">
+          <caret line="438" column="22" selection-start-line="438" selection-start-column="22" selection-end-line="438" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/handler/codec/MessageToMessageEncoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/netty/DemoServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/ChannelInboundHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/ChannelHandlerContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/handler/codec/string/StringDecoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/handler/codec/MessageToMessageDecoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/ChannelInitializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/java/mvnRepository/io/netty/netty-all/4.1.15.Final/netty-all-4.1.15.Final.jar!/io/netty/channel/Channel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tool/collect/skytools/support/utility/DateUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="427" lean-forward="true" selection-start-line="427" selection-end-line="427" />
+          <folding>
+            <element signature="docComment;class#DateUtility#0" />
+            <element signature="e#549#1006#0" />
+            <element signature="e#1012#1200#0" />
+            <element signature="e#1012#1747#0" />
+            <element signature="e#1753#1949#0" />
+            <element signature="e#1753#2366#0" />
+            <element signature="e#2372#2467#0" />
+            <element signature="e#2372#2862#0" />
+            <element signature="e#2868#2953#0" />
+            <element signature="e#2868#3353#0" />
+            <element signature="e#3359#3754#0" />
+            <element signature="e#3760#3860#0" />
+            <element signature="e#3983#4077#0" />
+            <element signature="e#4212#4306#0" />
+            <element signature="e#4441#4547#0" />
+            <element signature="e#4680#4783#0" />
+            <element signature="e#4911#5020#0" />
+            <element signature="e#5158#5262#0" />
+            <element signature="e#5158#5405#0" />
+            <element signature="e#5411#5500#0" />
+            <element signature="e#5637#5767#0" />
+            <element signature="e#5637#5902#0" />
+            <element signature="e#5908#6044#0" />
+            <element signature="e#5908#6189#0" />
+            <element signature="e#6195#6334#0" />
+            <element signature="e#6195#6484#0" />
+            <element signature="e#6490#7183#0" />
+            <element signature="e#7189#7493#0" />
+            <element signature="e#7499#7777#0" />
+            <element signature="e#7783#7841#0" />
+            <element signature="e#7783#8025#0" />
+            <element signature="e#8031#8089#0" />
+            <element signature="e#8031#8269#0" />
+            <element signature="e#8275#8345#0" />
+            <element signature="e#8275#8694#0" />
+            <element signature="e#8700#8825#0" />
+            <element signature="e#8700#9252#0" />
+            <element signature="e#9258#9332#0" />
+            <element signature="e#9258#9507#0" />
+            <element signature="e#9513#9588#0" />
+            <element signature="e#9513#9945#0" />
+            <element signature="e#9951#10077#0" />
+            <element signature="e#9951#10583#0" />
+            <element signature="e#10589#10696#0" />
+            <element signature="e#10589#10932#0" />
+            <element signature="e#10938#11043#0" />
+            <element signature="e#10938#11271#0" />
+            <element signature="e#11277#11558#0" />
+            <element signature="e#11564#11850#0" />
+            <element signature="e#11856#12133#0" />
+            <element signature="e#12139#12332#0" />
+            <element signature="e#12435#12529#0" />
+            <element signature="e#12435#13292#0" />
+            <element signature="e#13298#13392#0" />
+            <element signature="e#13298#14151#0" />
+            <element signature="e#14157#14282#0" />
+            <element signature="e#14157#14726#0" />
+            <element signature="e#14732#14813#0" />
+            <element signature="e#14732#15040#0" />
+            <element signature="e#15046#15102#0" />
+            <element signature="e#15046#15459#0" />
+            <element signature="e#15465#15641#0" />
+            <element signature="e#15647#15696#0" />
+            <element signature="e#15647#16109#0" />
+            <element signature="e#16115#16165#0" />
+            <element signature="e#16115#16431#0" />
+            <element signature="e#16437#16687#0" />
+            <element signature="e#16693#16951#0" />
+            <element signature="e#16957#17170#0" />
+            <element signature="e#17176#17249#0" />
+            <element signature="e#17176#17513#0" />
+            <element signature="e#17519#17764#0" />
           </folding>
         </state>
       </provider>
