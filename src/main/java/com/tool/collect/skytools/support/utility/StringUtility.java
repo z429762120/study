@@ -1,14 +1,19 @@
 package com.tool.collect.skytools.support.utility;
 
-import lombok.experimental.UtilityClass;
-import org.springframework.util.CollectionUtils;
-import org.springframework.util.StringUtils;
-
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import lombok.experimental.UtilityClass;
+
+import org.springframework.util.CollectionUtils;
+import org.springframework.util.StringUtils;
 
 /**
  * 字符串工具类
@@ -629,75 +634,16 @@ public class StringUtility extends StringUtils {
         return matcher.find();
     }
 
+    public static String[] splitToFixLenthArray(String source, int length) {
+        String regex = "(.{" + length + "})";
+        String replace = source.replaceAll(regex, "$1,");
+        return replace.split(",");
+    }
+
+
     public static void main(String[] args) throws Exception {
-        /*String username = "xxx\uD83D\uDC66\uD83C\uDFFFsss\uD83E\uDD16";
-        System.out.println(username.length());
-        //替换emoji表情
-        String str = StringUtility.filterEmoji(username);
-        System.out.println(str);
-
-        boolean check = checkUserNameFormat(username);
-        System.out.println(check);
-
-        boolean a = contrainEmoji(username);
-        System.out.println(a);
-
-        String base64_str = base64UserNameEmoji(username);
-        String decode_str = new String(Base64.decodeBase64(base64_str));
-        System.out.println(base64_str);
-        System.out.println(decode_str);*/
-        /*System.out.println(getStringByte("112#&#；=&(*”？@*？"));
-        System.out.println(stringBytesMax20("As2sssss\uD83D\uDC66止逆阀止止"));
-        System.out.println(stringBytesMax20("As2sssss\uD83D\uDC66止逆阀","ab65"));*/
-        /*String s = "20170323,20171011,20171001,20171002,20171003,20171006,20171007,20171010,20171015,20170110";
-        List<String> list = convDateStr(s);
-        for(String str : list){
-            System.out.println(str);
-        }*/
-
-        //String str = new String("01,02,03,04,05,06,07,08,09,11,13,14,18,19,20,22,23");
-        /*String str = new String("00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23");
-        System.out.println(getContinuationTime(str,false));
-        //String[] use_time_list = getContinuationTime(str,true).split(",");
-        //System.out.println(Arrays.asList(use_time_list));
-        System.out.println(StringUtility.hasLength(null));
-
-        Blowfish bf = new Blowfish("aimymusic");
-        System.out.println(bf.decrypt("e3f3feea65295143b0cb84d306e14c391bd7d766d5148c316fe13d48906be0dc"));*/
-
-        /*EncryptorUtility encryptor = new EncryptorUtility("4NCMAIfiXsjB9OrG");
-        System.out.println(encryptor.encryptNoSalt("aimymusic",EncryptorUtility.OPERATION.MD5));
-
-        long timestamp = System.currentTimeMillis();
-        long twepoch = 1498838400000L;
-        System.out.println(((timestamp - twepoch) * 4194304));
-        System.out.println(((timestamp - twepoch) << 22));
-        System.out.println((43530 << 6));
-        long i = ((timestamp - twepoch) << 22) | (43530 << 6) | 0L;
-        System.out.println(((timestamp - twepoch) << 22) | (43530 << 6));
-        System.out.println(((43530 << 6) | 0L));
-        System.out.println(i);
-
-        System.out.println(((31536000000L*69) << 22) | (43530 << 6) | 0L);//69年*/
-
-        /*System.out.println(urlEncoder("&^"));
-        System.out.println(urlEncoder("中午"));
-        System.out.println(URLDecoder.decode(urlEncoder("&^"),"UTF-8"));
-        System.out.println(URLDecoder.decode(urlEncoder("f1f7a8dd-21cf-4f5e-a36e-16a9b6d341b0"),"UTF-8"));
-
-        // Collator 类是用来执行区分语言环境的 String 比较的，这里选择使用CHINA
-        Comparator comparator = Collator.getInstance(java.util.Locale.CHINA);
-        String[] arrStrings = { "杰西西","杰西西的猫","杰西西啊狗","杰西西glRf"};
-        // 使根据指定比较器产生的顺序对指定对象数组进行排序。
-        Arrays.sort(arrStrings, comparator);
-        for (int i = 0; i < arrStrings.length; i++)
-            System.out.println(arrStrings[i]);*/
-
-        String sourceStr = "12121_LOW_112112";
-        String regEx1= "b";
-        String regEx2 = "LOW";
-        boolean b = regExfind(sourceStr,regEx1) || regExfind(sourceStr,regEx2);
-        System.out.println(b);
+        final String[] strings = splitToFixLenthArray("510100", 2);
+        System.out.println(Arrays.toString(strings));
     }
 
 }

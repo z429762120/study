@@ -23,6 +23,11 @@ public class GetProductCommand extends HystrixCommand<ProductInfo> {
                 .andThreadPoolPropertiesDefaults(HystrixThreadPoolProperties.Setter()
                         //线程池大小 默认10
                         .withCoreSize(10)
+                        //设置线程池的最大值，只有在设置了allowMaximumSizeToDivergeFromCoreSize时才生效
+                        .withMaximumSize(10)
+                        .withAllowMaximumSizeToDivergeFromCoreSize(true)
+                        // 当线程池中的线程空闲超过该时间后，就会被销毁，单位分钟，默认1
+                        .withKeepAliveTimeMinutes(1)
                         //线程池满了之后，再有请求会压入队列，指定队列大小，默认不限
                         //.withMaxQueueSize(1000)
                         //队列满了之后reject的阈值，通过此参数控制线程的最大大小，默认10，与MaxQueueSize配合使用，取较小值
@@ -50,6 +55,27 @@ public class GetProductCommand extends HystrixCommand<ProductInfo> {
                         .withExecutionTimeoutEnabled(true)
                         //开启超时降级机制后，允许的最大超时时间，默认1s
                         .withExecutionTimeoutInMilliseconds(1000)
+                        //强制开启断路器，默认false，相当于手动降级
+                        .withCircuitBreakerForceOpen(false)
+                        /**
+                         * 统计相关
+                         */
+                        //设置统计 滑动窗口的时间，单位毫秒，默认10000，即10s，hystrix会维持这段时间内的metric供断路器使用
+                        .withMetricsRollingStatisticalWindowInMilliseconds(10000)
+                        //每个滑动窗口被拆分为多少个bucket,默认10个，也就是每秒钟1个bucket，滑动窗口统计时间必须对这个参数能够整除
+                        .withMetricsRollingStatisticalWindowBuckets(10)
+                        //控制是否追踪请求耗时，以及通过百分比方式来统计，默认是 true
+                        .withMetricsRollingPercentileEnabled(true)
+                        //滑动窗口 被持久化保存的时间，这样才能计算一些请求耗时的百分比，默认是 60000 = 60s
+                        .withMetricsRollingPercentileWindowInMilliseconds(60000)
+                        //设置 rolling percentile window 被拆分成的 bucket 数量，上面那个参数除以这个参数必须能够整除，不允许热修改
+                        //默认值是 6，也就是每 10s 被拆分成一个 bucket
+                        .withMetricsRollingPercentileWindowBuckets(6)
+                        //设置每个 bucket 的请求执行次数被保存的最大数量，如果在一个 bucket 内，执行次数超过了这个值，那么就会重新覆盖从 bucket 的开始再写
+                        //举例来说，如果 bucket size 设置为 100，而且每个 bucket 代表一个 10 秒钟的窗口， 但是在这个 bucket 内发生了 500 次请求执行，那么这个 bucket 内仅仅会保留 100 次执行
+                        .withMetricsRollingPercentileBucketSize(100)
+                        //控制成功和失败的百分比计算，与影响短路器之间的等待时间，默认值是 500 毫秒
+                        .withMetricsHealthSnapshotIntervalInMilliseconds(500)
 
                 )
         );
@@ -61,9 +87,9 @@ public class GetProductCommand extends HystrixCommand<ProductInfo> {
     protected ProductInfo run() throws Exception {
         Thread.sleep(1200);
         System.out.println("商品productId="+productId);
-        if (productId < 30) {
+        /*if (productId < 30) {
             throw new Exception();
-        }
+        }*/
         final ProductInfo info = new ProductInfo(productId, "花生");
         System.out.println(info);
         return info;

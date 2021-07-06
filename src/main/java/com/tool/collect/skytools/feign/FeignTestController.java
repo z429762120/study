@@ -1,17 +1,16 @@
 package com.tool.collect.skytools.feign;
 
-import com.alibaba.fastjson.JSONObject;
-import com.ywkj.base.bean.ResponseResult;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+import com.alibaba.fastjson.JSONObject;
+import com.ywkj.base.bean.ResponseResult;
+import lombok.extern.slf4j.Slf4j;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * @Descriiption
@@ -19,8 +18,8 @@ import java.util.concurrent.Executors;
  * @Date 2019/10/8 下午2:28
  **/
 @Slf4j
-@RestController
-@RequestMapping("test")
+//@RestController
+//@RequestMapping("test")
 public class FeignTestController {
     ExecutorService service = Executors.newFixedThreadPool(50);
     @Autowired
