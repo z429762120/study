@@ -29,7 +29,7 @@
         <version.http-client>4.5.2</version.http-client>
         <version.springboot>1.5.3.RELEASE</version.springboot>
         <version.spring-data>Fowler-SR2</version.spring-data>
-        <version.mybatis>3.4.4</version.mybatis>
+        <version.mybatis>3.5.6</version.mybatis>
         <version.spring-mybatis>1.3.1</version.spring-mybatis>
         <version.boot.batch>1.5.9.RELEASE</version.boot.batch>
         <version.mysql>5.1.42</version.mysql>
