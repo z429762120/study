@@ -32,7 +32,7 @@
         <version.mybatis>3.4.4</version.mybatis>
         <version.spring-mybatis>1.3.1</version.spring-mybatis>
         <version.boot.batch>1.5.9.RELEASE</version.boot.batch>
-        <version.mysql>5.1.42</version.mysql>
+        <version.mysql>8.0.16</version.mysql>
         <version.oauth2>1.2.3.RELEASE</version.oauth2>
         <version.spring.tx>4.3.18.RELEASE</version.spring.tx>
         <version.logback>4.6</version.logback>
