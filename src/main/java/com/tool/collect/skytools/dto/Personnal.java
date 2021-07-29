@@ -1,7 +1,5 @@
 package com.tool.collect.skytools.dto;
 
-
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -12,12 +10,13 @@ import lombok.NoArgsConstructor;
  **/
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
-public class Person {
+//@Accessors(chain = true)
+public class Personnal {
     private String username;
     private Integer age;
     private Byte leaf;
-    public Person(String username, Integer age) {
+
+    public Personnal(String username, Integer age) {
         this.username = username;
         this.age = age;
     }
