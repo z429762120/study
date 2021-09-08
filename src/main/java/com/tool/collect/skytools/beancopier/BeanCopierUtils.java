@@ -15,7 +15,8 @@ import org.slf4j.LoggerFactory;
 
 /**
  *
- * @Descriiption bean 复制类 效率比spring BeanUtils更高
+ * bean 复制类 效率比spring BeanUtils更高
+ * 只能复制属性类型、名字一样的属性，即使是原始类型与包装类型之间的关系也不行
  *
  * @Author bo
  * @Date 2021/7/28 下午4:32
@@ -25,6 +26,10 @@ public class BeanCopierUtils {
 
 	private static Map<String, BeanCopier> beanCopierCacheMap = new ConcurrentHashMap<>();
 
+	/**
+	 * @param source
+	 * @param target
+	 */
 	public static void copyProperties(Object source, Object target) {
 		copyProperties(source, target, null);
 	}
@@ -84,6 +89,11 @@ public class BeanCopierUtils {
 		}
 	}
 
+	/**
+	 * 获取泛型真实类型
+	 * @param field
+	 * @return
+	 */
 	private static Class<?> getFieldGenericType(Field field) {
 		final Type genericType = field.getGenericType();
 		if (genericType instanceof ParameterizedType) {

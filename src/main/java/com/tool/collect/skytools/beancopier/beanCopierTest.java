@@ -18,7 +18,7 @@ public class beanCopierTest {
 
 	public static void main(String[] args) throws Exception {
 		CommentInfoDO commentInfoDO = new CommentInfoDO();
-		commentInfoDO.setUsername("zhangsan");
+		commentInfoDO.setGoodsId(12L);
 		commentInfoDO.setCommentContent("hello");
 		commentInfoDO.setCommentStatus(1);
 		commentInfoDO.setDefaultComment(21);

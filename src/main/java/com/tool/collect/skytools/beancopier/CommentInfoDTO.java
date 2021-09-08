@@ -19,7 +19,7 @@ public class CommentInfoDTO {
 	/**
 	 * 订单条目对应的商品id
 	 */
-	private Long goodsId;
+	private long goodsId;
 
 	/**
 	 * 商品sku销售属性
