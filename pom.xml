@@ -50,6 +50,13 @@
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-recipes -->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+            <version>5.2.0</version>
+        </dependency>
+
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
@@ -395,21 +402,6 @@
             <id>aliyun</id>
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
         </repository>
-        <!--<repository>
-            <id>nexus</id>
-            <url>http://106.14.223.238:8096/repository/Server/</url>
-        </repository>
-        <repository>
-            <id>server-public</id>
-            <name>server-public</name>
-            <url>http://106.14.223.238:8096/repository/server-public/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>-->
     </repositories>
     <pluginRepositories>
         <pluginRepository>

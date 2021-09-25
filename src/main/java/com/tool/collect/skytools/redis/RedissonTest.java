@@ -24,6 +24,9 @@ public class RedissonTest {
 				.addNodeAddress("redis://192.168.56.103:7005")
 				.addNodeAddress("redis://192.168.56.103:7006");
 		RedissonClient redisson = Redisson.create(config);
+		final RLock fairLock = redisson.getFairLock("mylock");
+		//fairLock.lock(, );
+
 		final RReadWriteLock readWriteLock = redisson.getReadWriteLock("mylock1");
 		final RLock readLock = readWriteLock.readLock();
 		readLock.lock();
