@@ -4,7 +4,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 /**
  *
- * @Descriiption
+ * @Descriiption 无界队列，基于一系列的指针移动+for循环+cas实现线程安全的操作
  * @Author bo
  * @Date 2021/10/15 上午9:42
  **/
@@ -20,6 +20,8 @@ public class ConcurrentLinkedQueueDemo {
 		final Integer peek = queue.peek();
 		//是否包含某个元素，不保证数据一致性
 		final boolean contains = queue.contains(11);
+
+		queue.size();
 
 
 	}

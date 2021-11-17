@@ -24,17 +24,28 @@ public class RedissonTest {
 				.addNodeAddress("redis://192.168.56.103:7005")
 				.addNodeAddress("redis://192.168.56.103:7006");
 		RedissonClient redisson = Redisson.create(config);
-		final RLock fairLock = redisson.getFairLock("mylock");
-		fairLock.lock( );
+		//final RLock lock = redisson.getFairLock("mylock");
+		final RLock lock = redisson.getLock("mylock");
+		lock.lock();
+		System.out.println("do something");
+		lock.unlock();
+
 
 		final RReadWriteLock readWriteLock = redisson.getReadWriteLock("mylock1");
 		final RLock readLock = readWriteLock.readLock();
 		readLock.lock();
 
 		System.out.println("获得锁");
-		//Thread.sleep(33000L);
 		readLock.unlock();
 		System.out.println("释放锁");
+
+		final RLock lock1 = redisson.getFairLock("mylock1");
+		final RLock lock2 = redisson.getFairLock("mylock2");
+
+		final RLock multiLock = redisson.getMultiLock(lock1,lock2);
+		multiLock.lock();
+		System.out.println("do something");
+		multiLock.unlock();
 
 	}
 }

@@ -19,8 +19,6 @@ public class CyclicBarrierDemo {
 			}
 		});
 		for (int i = 0; i < 9; i++) {
-
-
 			new MyThread(cyclicBarrier).start();
 			new MyThread(cyclicBarrier).start();
 			new MyThread(cyclicBarrier).start();

@@ -3,7 +3,7 @@ package com.tool.collect.skytools.concurrent;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
- *
+ * 有界阻塞队列 基于单项量表+两把锁实现 takeLock\putLock
  * @Descriiption
  * @Author bo
  * @Date 2021/10/17 下午3:27
